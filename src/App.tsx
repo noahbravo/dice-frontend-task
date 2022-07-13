@@ -1,15 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import 'twin.macro'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p tw="border-2 border-red-500">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <h1 tw="text-blue-500 text-4xl">Hello world</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,7 +19,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
