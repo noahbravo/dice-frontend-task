@@ -1,6 +1,7 @@
 {
   "name": "dice-frontend-task",
   "version": "0.1.0",
+  "description": "Frontend Engineer Technical Exercise",
   "private": true,
   "scripts": {
     "start": "craco start",
@@ -31,6 +32,11 @@
       "last 1 safari version"
     ]
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elenabravo/dice-frontend-task"
+  },
+  "author": "Elena Bravo<hey@elenabravo.com>",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.9.3",
@@ -53,7 +59,7 @@
   },
   "devDependencies": {
     "@axe-core/react": "^4.4.3",
-    "@craco/craco": "^6.4.5",
+    "@craco/craco": "^7.0.0-alpha.7",
     "@emotion/babel-plugin": "^11.9.2",
     "@emotion/babel-preset-css-prop": "^11.2.0",
     "@typescript-eslint/eslint-plugin": "^5.30.6",

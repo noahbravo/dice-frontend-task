@@ -1,5 +1,7 @@
 import React from 'react'
 import 'twin.macro'
+import { Global } from '@emotion/react'
+import { globalStyles } from './styles'
 
 const App = () => {
   return (
@@ -8,7 +10,7 @@ const App = () => {
         <p tw="border-2 border-red-500">
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <h1 tw="text-blue-500 text-4xl">Hello world</h1>
+        <h1 tw="text-blue-500 text-4xl">yyyy</h1>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,6 +20,7 @@ const App = () => {
           Learn React
         </a>
       </header>
+      <Global styles={globalStyles} />
     </div>
   )
 }

@@ -20,11 +20,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "./src",
-    "typeRoots": ["node_modules/@types", "src/@types"],
-    "paths": {
-      "@/*": ["./src/*"],
-      "@/public/*": ["./public/*"]
-    }
+    "typeRoots": ["node_modules/@types", "src/@types"]
   },
   "include": [
     "src"
