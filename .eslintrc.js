@@ -61,6 +61,8 @@ module.exports = {
         unnamedComponents: 'arrow-function'
       }
     ],
+    'no-shadow': 'off',
+    '@typescript-eslint/no-shadow': ['error'],
     'prettier/prettier': 'warn'
   },
   overrides: [
