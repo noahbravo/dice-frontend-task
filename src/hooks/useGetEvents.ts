@@ -1,38 +1,40 @@
-import { useState, useEffect } from 'react'
-import type { ApiData } from '../@types/events'
-import { getEvents, type RequestParams } from '../api'
+import { useState } from 'react'
+import { fetchEvents, type RequestParams } from '../api'
 
-const useGetEvents = (requestParams: RequestParams) => {
-  const [data, setData] = useState<ApiData>()
+interface UseGetEventsProps<T> {
+  onCompleted: (data: T | undefined) => void
+}
+
+type GetEventsFnc = ({ variables }: { variables: RequestParams }) => void
+
+const useGetEvents = <T>({ onCompleted }: UseGetEventsProps<T>) => {
+  const [data, setData] = useState<T>()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
-  useEffect(() => {
-    const handleGetEvents = async () => {
-      setLoading(true)
-      try {
-        setError('')
-        const response = await getEvents(requestParams)
+  const getEvents: GetEventsFnc = async ({ variables }) => {
+    setLoading(true)
+    let apiData
+    try {
+      setError('')
+      const response = await fetchEvents(variables)
 
-        if (response.ok) {
-          const apiData = await response.json()
-          setData(apiData)
-        } else {
-          const errorMessage = await response.text()
-          throw new Error(errorMessage)
-        }
-      } catch (err) {
-        const errorMessage = err as string
-        setError(errorMessage)
+      if (response.ok) {
+        apiData = await response.json()
+        setData(apiData)
+      } else {
+        const errorMessage = await response.text()
+        throw new Error(errorMessage)
       }
-      setLoading(false)
+    } catch (err) {
+      const errorMessage = err as { message: string }
+      setError(errorMessage.message)
     }
+    onCompleted(apiData)
+    setLoading(false)
+  }
 
-    handleGetEvents()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
-  return { data, loading, error }
+  return { getEvents, data, loading, error }
 }
 
 export { useGetEvents }

@@ -4,6 +4,11 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
+if (process.env.NODE_ENV !== 'production') {
+  // eslint-disable-next-line global-require, @typescript-eslint/no-var-requires
+  const axe = require('@axe-core/react')
+  axe(React, ReactDOM, 1000)
+}
 root.render(
   <React.StrictMode>
     <App />

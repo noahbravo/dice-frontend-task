@@ -1,61 +1,103 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import 'twin.macro'
-import { Global } from '@emotion/react'
+import { Layout, SearchBar, EventList } from './components'
 import { RequestParams, RequestParamKeys } from './api'
-import type { Event, ApiData } from './@types/events'
+import type { ApiData, Event as EventType, PageLinks } from './@types/events'
 import { useGetEvents } from './hooks'
-import { globalStyles } from './styles'
 
 const App = () => {
   const REQUEST_LITMIT = '12'
   const [searchVenue, setSearchVenue] = useState('')
+  const [eventNodes, setEventNodes] = useState<EventType[]>([])
   const [hasNextPage, setHasNextPage] = useState(true)
-  const [nextPage, setNextPage] = useState<RequestParams['page[number]']>(null)
-  const [eventNodes, setEventNodes] = useState<Event[]>([])
+  const [nextPage, setNextPage] = useState<RequestParams[RequestParamKeys.Page]>(null)
 
-  const requestParams = {
-    [RequestParamKeys.Venues]: searchVenue,
-    [RequestParamKeys.Limit]: REQUEST_LITMIT,
-    [RequestParamKeys.Page]: nextPage
-  } as RequestParams
+  const resetNextPage = () => {
+    setNextPage(null)
+    setHasNextPage(false)
+  }
 
-  const { data, loading, error } = useGetEvents(requestParams)
+  const resetEvents = () => {
+    setEventNodes([])
+    resetNextPage()
+  }
 
-  const handleNextLink = (next: ApiData['links']['next']) => {
+  const getRequestVariables = (
+    venue: RequestParams[RequestParamKeys.Venues],
+    next: RequestParams[RequestParamKeys.Page]
+  ) =>
+    ({
+      [RequestParamKeys.Limit]: REQUEST_LITMIT,
+      [RequestParamKeys.Venues]: venue,
+      [RequestParamKeys.Page]: next
+    } as RequestParams)
+
+  const updateEventNodes = (fetchedEvents: EventType[]) => {
+    if (fetchedEvents.length) {
+      setEventNodes((currentEvents) => [...currentEvents, ...fetchedEvents])
+    }
+  }
+
+  const updateNextPage = (next: PageLinks['next']) => {
     if (next) {
       setHasNextPage(true)
       const urlParams = new URLSearchParams(next)
       setNextPage(urlParams.get(RequestParamKeys.Page))
     } else {
-      setHasNextPage(false)
-      setNextPage(null)
+      resetNextPage()
     }
   }
 
-  useEffect(() => {
-    if (data) {
+  const handleOnCompletedRequest = (data: ApiData | undefined) => {
+    if (data?.data.length) {
       const { data: fetchedEvents, links } = data
       const { next } = links || {}
-      setEventNodes((currentEvents) => [...currentEvents, ...fetchedEvents])
-      handleNextLink(next)
+      updateEventNodes(fetchedEvents)
+      updateNextPage(next)
+      return
     }
-  }, [data])
+
+    if (eventNodes.length) resetEvents()
+  }
+
+  const { getEvents, loading, error } = useGetEvents<ApiData>({
+    onCompleted: handleOnCompletedRequest
+  })
+
+  const handleSearch = (venue: string) => {
+    setSearchVenue(venue)
+
+    if (venue) {
+      const requestVariables = getRequestVariables(venue, nextPage)
+      getEvents({ variables: requestVariables })
+      return
+    }
+
+    if (eventNodes.length) resetEvents()
+  }
+
+  const handleLoadMore = () => {
+    const requestVariables = getRequestVariables(searchVenue, nextPage)
+    getEvents({ variables: requestVariables })
+  }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        {error && <p>Error: {error}</p>}
-        {eventNodes.length > 0 && (
-          <ul>
-            {eventNodes.map(({ id, name }) => (
-              <li key={id}>{name}</li>
-            ))}
-          </ul>
-        )}
-        {loading && <p>Loading...</p>}
-      </header>
-      <Global styles={globalStyles} />
-    </div>
+    <Layout>
+      <SearchBar handleSearch={handleSearch} />
+      <div tw="w-full">
+        <div tw="m-auto max-w-screen-2xl">
+          {error && <p>Error: {error}</p>}
+          <EventList
+            eventNodes={eventNodes}
+            hasNextPage={hasNextPage}
+            searchVenue={searchVenue}
+            loading={loading}
+            handleLoadMore={handleLoadMore}
+          />
+          {loading && <p>Loading...</p>}
+        </div>
+      </div>
+    </Layout>
   )
 }
 

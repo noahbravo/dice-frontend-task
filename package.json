@@ -38,6 +38,7 @@
   },
   "author": "Elena Bravo<hey@elenabravo.com>",
   "dependencies": {
+    "@axe-core/react": "^4.4.3",
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -58,7 +59,6 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
-    "@axe-core/react": "^4.4.3",
     "@craco/craco": "^7.0.0-alpha.7",
     "@emotion/babel-plugin": "^11.9.2",
     "@emotion/babel-preset-css-prop": "^11.2.0",

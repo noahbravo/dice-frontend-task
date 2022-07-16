@@ -1,20 +1,18 @@
 const { REACT_APP_X_API_KEY, REACT_APP_API_URL } = process.env
 
 export enum RequestParamKeys {
-  Venues = 'filter[venues]',
   Limit = 'page[size]',
+  Venues = 'filter[venues]',
   Page = 'page[number]'
 }
-
 export interface RequestParams {
-  [RequestParamKeys.Venues]: string
   [RequestParamKeys.Limit]: string
+  [RequestParamKeys.Venues]: string
   [RequestParamKeys.Page]: string | null
 }
 
-const getEvents = (params: RequestParams) => {
+const fetchEvents = (params: RequestParams) => {
   const url = new URL(REACT_APP_API_URL)
-
   Object.entries(params).forEach(([key, value]) => {
     if (value) url.searchParams.append(key, value)
   })
@@ -27,4 +25,4 @@ const getEvents = (params: RequestParams) => {
   return fetch(url, options)
 }
 
-export { getEvents }
+export { fetchEvents }
