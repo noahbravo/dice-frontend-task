@@ -1,15 +1,15 @@
 import React, { useState, useRef } from 'react'
+import { BackgroundImage } from 'react-image-and-background-image-fade'
 import tw, { styled, css } from 'twin.macro'
 import { formatPrice, formatDate, getDateStatus, DateStatus } from '../utils'
 import { toRem } from '../styles'
 import { PlayIcon } from './ui/svg'
 import type { Event as EventType } from '../@types/events'
 
-const StyledImageContainer = styled.div<{ backgroundImg: string }>`
+const imageContainerStyles = css`
   ${tw`flex flex-col justify-end object-cover bg-no-repeat bg-center bg-cover`};
   min-width: ${toRem(320)};
   height: ${toRem(320)};
-  background-image: ${({ backgroundImg }) => `url(${backgroundImg})`};
   transition: all 0.2s 0.15s ease-in-out;
 `
 
@@ -106,7 +106,7 @@ const EventItem = ({
 
   return (
     <div tw="mt-8 mb-10">
-      <StyledImageContainer ref={imageContainer} backgroundImg={images[0]}>
+      <BackgroundImage css={imageContainerStyles} src={images[0]} width="320px" height="320px">
         {(featured || withAudioTracks || onSale) && (
           <div tw="flex justify-between items-center">
             {withAudioTracks && (
@@ -125,7 +125,7 @@ const EventItem = ({
             )}
           </div>
         )}
-      </StyledImageContainer>
+      </BackgroundImage>
       <div tw="flex flex-col my-4">
         <span>
           {weekDayName} {day} {month} — {time}
