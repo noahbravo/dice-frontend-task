@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import 'twin.macro'
-import { Layout, SearchBar, EventList } from './components'
+import { Layout, SearchBar, EventList, Loader } from './components'
 import { RequestParams, RequestParamKeys } from './api'
 import type { ApiData, Event as EventType, PageLinks } from './@types/events'
 import { useGetEvents } from './hooks'
@@ -94,7 +94,7 @@ const App = () => {
             loading={loading}
             handleLoadMore={handleLoadMore}
           />
-          {loading && <p>Loading...</p>}
+          {loading && <Loader />}
         </div>
       </div>
     </Layout>
