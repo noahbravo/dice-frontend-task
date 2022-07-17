@@ -230,7 +230,7 @@ const EventItem = ({
             aria-label="go to DICE event page"
             rel="noopener noreferrer nofollow"
             target="_blank"
-            tw="w-40 text-font-sm font-bold uppercase text-center bg-accent-color py-2.5 hover:bg-darken-accent-color"
+            tw="flex w-40 h-10 justify-center items-center text-font-sm font-bold uppercase bg-accent-color hover:bg-darken-accent-color leading-none"
           >
             {onSale ? statusText.onSale : statusText.bookNow}
           </a>
