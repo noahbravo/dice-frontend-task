@@ -6,7 +6,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "craco test --testMatch=\"**/*.(test).{ts,tsx}\"",
     "coverage": "craco test --coverage",
     "eject": "react-scripts eject",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,ts,tsx,json}\"",
@@ -50,6 +50,8 @@
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
+    "cross-fetch": "^3.1.5",
+    "msw": "^0.44.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-image-and-background-image-fade": "^1.0.8",

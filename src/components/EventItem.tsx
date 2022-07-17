@@ -6,13 +6,6 @@ import { toRem } from '../styles'
 import { PlayIcon } from './ui/svg'
 import type { Event as EventType } from '../@types/events'
 
-const imageContainerStyles = css`
-  ${tw`flex flex-col justify-end object-cover bg-no-repeat bg-center bg-cover`};
-  min-width: ${toRem(320)};
-  height: ${toRem(320)};
-  transition: all 0.2s 0.15s ease-in-out;
-`
-
 const StyledToggleContent = styled.div`
   ${tw`max-h-0 bg-dark-container-color overflow-x-hidden overflow-y-auto`};
   box-sizing: border-box;
@@ -32,6 +25,21 @@ const StyledToggleContent = styled.div`
     box-shadow: inset 0 0 0.875rem 0.875rem #bbbbbe;
     border: solid 0.25rem transparent;
     border-radius: 0.875rem;
+  }
+`
+
+const backgroundImageTransition = css`
+  transition: all 0.2s 0.15s ease-in-out;
+`
+
+const imageContainerStyles = css`
+  ${tw`flex flex-col justify-end object-cover bg-no-repeat bg-center bg-cover`};
+  ${backgroundImageTransition}
+`
+
+const StyledImageWrapper = styled.div`
+  > div {
+    ${backgroundImageTransition}
   }
 `
 
@@ -62,7 +70,7 @@ const EventItem = ({
 }: EventType) => {
   const [activeToggle, setActiveToggle] = useState(false)
   const toggleContentRef = useRef<HTMLInputElement>(null)
-  const imageContainer = useRef<HTMLInputElement>(null)
+  const imageWrapperRef = useRef<HTMLInputElement>(null)
 
   const onToggle = () => {
     setActiveToggle((active) => !active)
@@ -74,11 +82,16 @@ const EventItem = ({
       toggleContentRef.current.style.height = maxHeight
     }
 
-    // set image container height
-    if (imageContainer?.current) {
-      const { clientHeight: currentHeight } = imageContainer.current
-      const height = activeToggle ? currentHeight * 2 : currentHeight / 2
-      imageContainer.current.style.height = `${height}px`
+    // set background image and its container height
+    if (imageWrapperRef?.current) {
+      const bgImageContainer = imageWrapperRef.current.querySelector('div')
+      const imageBackground = bgImageContainer?.querySelector('div')
+      if (bgImageContainer && imageBackground) {
+        const { clientHeight: currentHeight } = bgImageContainer
+        const height = activeToggle ? currentHeight * 2 : currentHeight / 2
+        bgImageContainer.style.height = `${height}px`
+        imageBackground.style.height = `${height}px`
+      }
     }
   }
 
@@ -87,9 +100,9 @@ const EventItem = ({
 
   const withAudioTracks = Boolean(appleMusicTracks.length || spotifyTracks.length)
 
-  const onSale = status === 'on-sale' && getDateStatus(saleStartDate) === DateStatus.After
-  const unavailable = status === 'cancelled' || getDateStatus(dateEnd) === DateStatus.Before
-  const available = onSale || !unavailable || !soldOut
+  const onSale = status === 'on-sale' && getDateStatus(saleStartDate) === DateStatus.AfterNow
+  const unavailable = status === 'cancelled' || getDateStatus(dateEnd) === DateStatus.BeforeNow
+  const available = onSale || (!unavailable && !soldOut)
 
   const {
     month: saleMonth,
@@ -100,32 +113,37 @@ const EventItem = ({
   const statusText = {
     unavailable: 'Unavailable',
     soldOut: 'Sold out',
-    onSale: 'On sale',
+    onSale: 'Get reminded',
     bookNow: 'Book now'
   }
 
   return (
-    <div tw="mt-8 mb-10">
-      <BackgroundImage css={imageContainerStyles} src={images[0]} width="320px" height="320px">
-        {(featured || withAudioTracks || onSale) && (
-          <div tw="flex justify-between items-center">
-            {withAudioTracks && (
-              <div tw="flex justify-center items-center w-12 h-12 bg-black bg-opacity-50">
-                <PlayIcon />
-              </div>
-            )}
-            {onSale ? (
-              <strong tw="flex bg-bg-color py-2 px-4 mr-4">
-                On sale {saleDay} {saleMonth} {saleTime}
-              </strong>
-            ) : (
-              featured && (
-                <strong tw="flex uppercase bg-accent-color py-2 px-4 mr-4">Featured</strong>
-              )
-            )}
-          </div>
-        )}
-      </BackgroundImage>
+    <div tw="mt-8 mb-10" data-testid="eventItem">
+      <StyledImageWrapper ref={imageWrapperRef}>
+        <BackgroundImage css={imageContainerStyles} src={images[0]} width="320px" height="320px">
+          {(featured || withAudioTracks || onSale) && (
+            <div tw="flex justify-between items-center">
+              {withAudioTracks && (
+                <div
+                  tw="flex justify-center items-center w-12 h-12 bg-black bg-opacity-50"
+                  data-testid="playButton"
+                >
+                  <PlayIcon />
+                </div>
+              )}
+              {onSale ? (
+                <strong tw="flex bg-bg-color py-2 px-4 mr-4">
+                  On sale {saleDay} {saleMonth} {saleTime}
+                </strong>
+              ) : (
+                featured && (
+                  <strong tw="flex uppercase bg-accent-color py-2 px-4 mr-4">Featured</strong>
+                )
+              )}
+            </div>
+          )}
+        </BackgroundImage>
+      </StyledImageWrapper>
       <div tw="flex flex-col my-4">
         <span>
           {weekDayName} {day} {month} — {time}
@@ -165,17 +183,31 @@ const EventItem = ({
               <strong tw="flex text-accent-color uppercase text-font-sm mb-3">Tickets</strong>
               {ticketTypes?.length && (
                 <ul>
-                  {ticketTypes.map(({ name: ticketName, price: ticketPrice, id: ticketId }) => {
-                    const { total: totalTicketPrice } = ticketPrice || {}
-                    return (
-                      <li key={`${id}_${ticketId}`} tw="mt-2">
-                        <span>{ticketName}</span>
-                        {totalTicketPrice && (
-                          <span> — {formatPrice(ticketPrice.total, currency)}</span>
-                        )}
-                      </li>
-                    )
-                  })}
+                  {ticketTypes.map(
+                    ({
+                      name: ticketName,
+                      price: ticketPrice,
+                      id: ticketId,
+                      sold_out: soldOutTicket
+                    }) => {
+                      const { total: totalTicketPrice } = ticketPrice || {}
+                      return (
+                        <li key={`${id}_${ticketId}`} tw="mt-2">
+                          <span>{ticketName}</span>
+                          {totalTicketPrice && (
+                            <>
+                              <span> — {formatPrice(ticketPrice.total, currency)}</span>
+                              {soldOutTicket && (
+                                <span tw="text-font-sm font-bold uppercase opacity-50 ml-2">
+                                  Sold out
+                                </span>
+                              )}
+                            </>
+                          )}
+                        </li>
+                      )
+                    }
+                  )}
                 </ul>
               )}
             </div>

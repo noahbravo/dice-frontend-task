@@ -2,7 +2,8 @@ const formatPrice = (price: number, currency: string) => {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency,
-    maximumFractionDigits: 0
+    maximumFractionDigits: 0,
+    minimumFractionDigits: 0
   })
   return formatter.format(price / 100)
 }

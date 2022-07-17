@@ -28,11 +28,11 @@ const SearchBar = ({ handleSearch }: SearchBarProps) => {
   return (
     <div tw="flex justify-center w-full px-5 pt-1 bg-bg-color fixed left-0 z-10">
       <form tw="w-full relative pb-10 bg-bg-color max-w-screen-2xl">
-        <div tw="absolute top-3 left-4">
+        <div tw="absolute top-2.5 left-4">
           <SearchIcon />
         </div>
         <input
-          tw="w-full rounded-3xl py-3 pr-2 pl-12 text-font-base"
+          tw="w-full rounded-3xl py-3 pr-2 pl-12 text-font-base border-0"
           type="text"
           value={value}
           onChange={onSearch}

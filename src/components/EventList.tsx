@@ -21,14 +21,14 @@ const EventList = ({
   const withEventNodes = eventNodes.length > 0
 
   const textContent = withEventNodes
-    ? 'Upcoming events at Venue'
+    ? `Upcoming events at ${eventNodes?.[0]?.venue}`
     : `Hm, couldn't find anything for "${searchVenue}"`
 
   const showText = !loading && searchVenue
   const showLoadMore = !loading && hasNextPage
 
   return (
-    <div tw="pt-24">
+    <>
       {showText && (
         <div tw="w-full flex justify-center lg:justify-start">
           <strong tw="text-font-2xl">{textContent}</strong>
@@ -36,7 +36,7 @@ const EventList = ({
       )}
       {withEventNodes && (
         <>
-          <ul tw="flex justify-center flex-wrap py-8 sm:gap-8 xl:justify-between">
+          <ul tw="flex flex-wrap justify-center sm:gap-8 xl:grid xl:grid-cols-3 xl:justify-items-center">
             {eventNodes.map((event) => (
               <li tw="w-80" key={event.id}>
                 <EventItem {...event} />
@@ -50,12 +50,12 @@ const EventList = ({
               aria-label="load more events"
               onClick={handleLoadMore}
             >
-              Load More
+              Load more
             </button>
           )}
         </>
       )}
-    </div>
+    </>
   )
 }
 

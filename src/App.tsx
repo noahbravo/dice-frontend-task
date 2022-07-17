@@ -85,8 +85,12 @@ const App = () => {
     <Layout>
       <SearchBar handleSearch={handleSearch} />
       <div tw="w-full">
-        <div tw="m-auto max-w-screen-2xl">
-          {error && <p>Error: {error}</p>}
+        <div tw="m-auto max-w-screen-2xl pt-24">
+          {error && (
+            <span tw="font-bold text-font-xl text-red-600" data-testid="error">
+              {error}
+            </span>
+          )}
           <EventList
             eventNodes={eventNodes}
             hasNextPage={hasNextPage}

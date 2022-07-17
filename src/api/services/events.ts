@@ -1,3 +1,5 @@
+const fetch = window.fetch ? window.fetch : require('cross-fetch')
+
 const { REACT_APP_X_API_KEY, REACT_APP_API_URL } = process.env
 
 export enum RequestParamKeys {
@@ -5,6 +7,7 @@ export enum RequestParamKeys {
   Venues = 'filter[venues]',
   Page = 'page[number]'
 }
+
 export interface RequestParams {
   [RequestParamKeys.Limit]: string
   [RequestParamKeys.Venues]: string

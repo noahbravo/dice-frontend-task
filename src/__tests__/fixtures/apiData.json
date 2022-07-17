@@ -1,0 +1,1598 @@
+{
+  "data": [
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": " ",
+      "sale_start_date": "2022-07-04T09:00:00Z",
+      "price": null,
+      "announcement_date": "2022-07-01T09:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "Dora Jar",
+      "ticket_types": [
+        {
+          "id": 255977,
+          "name": "General Admission",
+          "price": {
+            "face_value": 1500,
+            "fees": 150,
+            "total": 1650
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-06-30/7b749948-b851-4928-8b3e-1c813da3804f.jpg?rect=53%2C0%2C1895%2C1125",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-06-30/7b749948-b851-4928-8b3e-1c813da3804f.jpg?rect=688%2C0%2C625%2C1125",
+        "square": "https://dice-media.imgix.net/attachments/2022-06-30/7b749948-b851-4928-8b3e-1c813da3804f.jpg?rect=438%2C0%2C1125%2C1125"
+      },
+      "age_limit": "This is a 16+ event. ",
+      "sold_out": false,
+      "sale_end_date": "2022-07-19T17:30:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/I1c906d34b49",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "7:30 PM"
+        },
+        {
+          "details": "Dora Jar",
+          "time": ""
+        }
+      ],
+      "id": "62bea2f50b0af40001658d08",
+      "genre_tags": ["gig:synthpop", "gig:indie"],
+      "spotify_tracks": [
+        {
+          "open_url": "https://open.spotify.com/track/0AaJgZIw1lJjc4QejCEpAu",
+          "preview_url": "https://p.scdn.co/mp3-preview/1d479a6023c7577b51cfaf6d8e384fcf0d4e074f?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Dora Jar - Polly"
+        }
+      ],
+      "detailed_artists": [
+        {
+          "headliner": false,
+          "id": 31221,
+          "name": "Dora Jar"
+        }
+      ],
+      "artists": ["Dora Jar"],
+      "promoters": [
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "F68AC01E9FA3AD6BBE0465C73EFDDC88",
+      "tags": [],
+      "int_id": 148414,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-06-30/7b749948-b851-4928-8b3e-1c813da3804f.jpg"
+      ],
+      "perm_name": "dora-jar-19th-jul-moth-club-london-tickets",
+      "hash": "2p3ka",
+      "date_end": "2022-07-19T22:00:00Z",
+      "date": "2022-07-19T18:30:00Z",
+      "type_tags": ["music:gig"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Communion. ",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": " \n\nPresented by Communion. \n\nThis is a 16+ event. ",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "Bad Vibrations Presents The Black Tambourines - Reunion Show at Moth Club\n\nFri July 22nd\nDoors at 7.30 pm\n\nFree Entry\n\n18+ event",
+      "sale_start_date": "2022-07-04T12:30:00Z",
+      "price": null,
+      "announcement_date": "2022-07-04T12:30:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "The Black Tambourines",
+      "ticket_types": [
+        {
+          "id": 257231,
+          "name": "General Admission",
+          "price": {
+            "face_value": 0,
+            "fees": 0,
+            "total": 0
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-07-04/66198d23-9082-4417-9549-d1ecca1aaa31.jpg?rect=0%2C77%2C1922%2C1153",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-07-04/66198d23-9082-4417-9549-d1ecca1aaa31.jpg?rect=602%2C0%2C718%2C1306",
+        "square": "https://dice-media.imgix.net/attachments/2022-07-04/66198d23-9082-4417-9549-d1ecca1aaa31.jpg?rect=308%2C0%2C1306%2C1306"
+      },
+      "age_limit": "This is an 18+ event",
+      "sold_out": false,
+      "sale_end_date": "2022-07-22T18:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/X773f894252d",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "7:30 PM"
+        },
+        {
+          "details": "The Black Tambourines",
+          "time": ""
+        }
+      ],
+      "id": "62c2d6e84688970001e8f182",
+      "genre_tags": [],
+      "spotify_tracks": [
+        {
+          "open_url": "https://open.spotify.com/artist/3LnRmAYd1Bq2uWWqblb4i7",
+          "preview_url": "https://p.scdn.co/mp3-preview/661038682fede3cf5ca224039620270ad785198d",
+          "title": "The Black Tambourines - Bad Days"
+        }
+      ],
+      "detailed_artists": [
+        {
+          "headliner": false,
+          "id": 1861,
+          "name": "The Black Tambourines"
+        }
+      ],
+      "artists": ["The Black Tambourines"],
+      "promoters": [
+        {
+          "id": 12,
+          "name": "Bad Vibrations"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "8D4ABA241E99C60C93DA2C8F7DB8368D",
+      "tags": ["badvibes"],
+      "int_id": 148989,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-07-04/66198d23-9082-4417-9549-d1ecca1aaa31.jpg"
+      ],
+      "perm_name": "the-black-tambourines-22nd-jul-moth-club-london-tickets",
+      "hash": "xpd23",
+      "date_end": "2022-07-22T22:00:00Z",
+      "date": "2022-07-22T18:30:00Z",
+      "type_tags": ["music:gig"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Bad Vibrations.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "Bad Vibrations Presents The Black Tambourines - Reunion Show at Moth Club\n\nFri July 22nd\nDoors at 7.30 pm\n\nFree Entry\n\n18+ event\n\nPresented by Bad Vibrations.\n\nThis is an 18+ event",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "Harnessing the spirit of the legendary era-defining NYC nightclubs Studio 54, Paradise Garage and The Loft we turn MOTH Club into a haven for 70s-80s disco and soul in the heart of Hackney!\nExpect to hear...\nDonna Summer, Grace Jones, Ceronne, Sister Sledge, Giorgio Moroder, Sylvester, Gino Soccio, CHIC, Roy Ayers, Melba Moore, Odyssey, Class Action, Prince, The Flirts, Patrick Cowley, Teddy Pendergrass, Ken Laszlo and plenty more!",
+      "sale_start_date": "2022-05-18T13:00:00Z",
+      "price": null,
+      "announcement_date": "2022-05-18T13:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "Pull Up To The Bumper",
+      "ticket_types": [
+        {
+          "id": 235174,
+          "name": "General Admission",
+          "price": {
+            "face_value": 600,
+            "fees": 60,
+            "total": 660
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-05-04/e0a7eb9d-39b4-4e6d-b921-2f9e31f26818.jpg?rect=0%2C67%2C2000%2C1200",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-05-04/e0a7eb9d-39b4-4e6d-b921-2f9e31f26818.jpg?rect=634%2C0%2C733%2C1333",
+        "square": "https://dice-media.imgix.net/attachments/2022-05-04/e0a7eb9d-39b4-4e6d-b921-2f9e31f26818.jpg?rect=334%2C0%2C1333%2C1333"
+      },
+      "age_limit": "This is an 18+ event.",
+      "sold_out": false,
+      "sale_end_date": "2022-07-23T01:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/R3663629907c",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "10:00 PM"
+        }
+      ],
+      "id": "6284f05424808f0001ed94c9",
+      "genre_tags": ["dj:disco", "dj:soul", "dj:funk"],
+      "spotify_tracks": [],
+      "detailed_artists": [],
+      "artists": [],
+      "promoters": [
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "CB2016090720187E40297F1BB71EEB4F",
+      "tags": ["genre:soul", "genre:funk", "genre:disco"],
+      "int_id": 139813,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-05-04/e0a7eb9d-39b4-4e6d-b921-2f9e31f26818.jpg"
+      ],
+      "perm_name": "pull-up-to-the-bumper-22nd-jul-moth-club-london-tickets",
+      "hash": "rl3qw",
+      "date_end": "2022-07-23T01:00:00Z",
+      "date": "2022-07-22T21:00:00Z",
+      "type_tags": ["music:dj"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "Harnessing the spirit of the legendary era-defining NYC nightclubs Studio 54, Paradise Garage and The Loft we turn MOTH Club into a haven for 70s-80s disco and soul in the heart of Hackney!\nExpect to hear...\nDonna Summer, Grace Jones, Ceronne, Sister Sledge, Giorgio Moroder, Sylvester, Gino Soccio, CHIC, Roy Ayers, Melba Moore, Odyssey, Class Action, Prince, The Flirts, Patrick Cowley, Teddy Pendergrass, Ken Laszlo and plenty more!\n\n\n\nThis is an 18+ event.",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "Need that gold streamer, pink bathroom, dancing-on-stage realness on a Saturday night? Moth Club has got you covered. Smash through the glittered ceiling until 3am every other Saturday\n\nFrom the minds behind “Everybody Loves Lizzo” and “Madonnathon”- A bi-weekly pop night with a twist: all killer no filler pop hits with a no cringe guarantee\n\nExpect to hear:\nMissy Elliot / Rihanna / Sia / Britney Spears / Sky Ferreira / Robyn / The Yeah Yeah Yeahs / Kehlani / Tommy Genesis / Craig David / Kali Uchis / Drake / Lady Gaga / Kanye West / Beyonce / Ms. Lauryn Hill / Katy B / Azaelia Banks / Cardi B / Lizzo / Jorja Smith /Kendrick Lamar / Katy Perry / La Roux / Taylor Swift / Kesha / Dizzee Rascal / Harry Styles / Ariana Grande / Lorde / Justin Timberlake / cupcakke / Princess Nokia / Dua Lipa / The Weeknd / Billie Eilish / Carly Rae Jepsen / Fergie / Estelle / Charli XCX / Destiny’s Child / A$AP Rocky / Nicki Minaj See less",
+      "sale_start_date": "2022-05-18T12:45:00Z",
+      "price": null,
+      "announcement_date": "2022-05-18T12:45:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "For The Love Of Pop",
+      "ticket_types": [
+        {
+          "id": 235134,
+          "name": "General Admission",
+          "price": {
+            "face_value": 600,
+            "fees": 60,
+            "total": 660
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2021-04-06/941feeb9-6dbe-4d9d-bdf8-47adc5b36b5e.jpg?rect=0%2C0%2C768%2C456",
+        "portrait": "https://dice-media.imgix.net/attachments/2021-04-06/941feeb9-6dbe-4d9d-bdf8-47adc5b36b5e.jpg?rect=83%2C6%2C422%2C760",
+        "square": "https://dice-media.imgix.net/attachments/2021-04-06/941feeb9-6dbe-4d9d-bdf8-47adc5b36b5e.jpg?rect=0%2C0%2C768%2C768"
+      },
+      "age_limit": "This is an 18+ event.",
+      "sold_out": false,
+      "sale_end_date": "2022-07-24T01:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/I14f554abf50",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "10:00 PM"
+        }
+      ],
+      "id": "6284ec0593006900017f1154",
+      "genre_tags": ["dj:pop"],
+      "spotify_tracks": [],
+      "detailed_artists": [],
+      "artists": [],
+      "promoters": [
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "0C0F9C3F0EAB7A0DEE3DE83558114A77",
+      "tags": ["type:gig", "genre:pop", "genre:hiphop", "genre:rap", "type:dj", "genre:tech-house"],
+      "int_id": 139786,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2021-04-06/941feeb9-6dbe-4d9d-bdf8-47adc5b36b5e.jpg"
+      ],
+      "perm_name": "for-the-love-of-pop-23rd-jul-moth-club-london-tickets",
+      "hash": "2po8p",
+      "date_end": "2022-07-24T02:00:00Z",
+      "date": "2022-07-23T21:00:00Z",
+      "type_tags": ["music:dj"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "Need that gold streamer, pink bathroom, dancing-on-stage realness on a Saturday night? Moth Club has got you covered. Smash through the glittered ceiling until 3am every other Saturday\n\nFrom the minds behind “Everybody Loves Lizzo” and “Madonnathon”- A bi-weekly pop night with a twist: all killer no filler pop hits with a no cringe guarantee\n\nExpect to hear:\nMissy Elliot / Rihanna / Sia / Britney Spears / Sky Ferreira / Robyn / The Yeah Yeah Yeahs / Kehlani / Tommy Genesis / Craig David / Kali Uchis / Drake / Lady Gaga / Kanye West / Beyonce / Ms. Lauryn Hill / Katy B / Azaelia Banks / Cardi B / Lizzo / Jorja Smith /Kendrick Lamar / Katy Perry / La Roux / Taylor Swift / Kesha / Dizzee Rascal / Harry Styles / Ariana Grande / Lorde / Justin Timberlake / cupcakke / Princess Nokia / Dua Lipa / The Weeknd / Billie Eilish / Carly Rae Jepsen / Fergie / Estelle / Charli XCX / Destiny’s Child / A$AP Rocky / Nicki Minaj See less\n\n\n\nThis is an 18+ event.",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "Filmmaker Martin Scorsese examines the life and work of author Fran Lebowitz.\nPublic Speaking captures the essence of legendary New York bestselling writer Fran Lebowitz, who is perhaps most known for her unique take on modern life. The film weaves together monologues, as well as footage from several of Lebowitz's speaking engagements, along with archival footage of Lebowitz from the 1970s to today which, showcases not only Lebowitz's unconventional worldview and experiences.\n\nFilm Screening",
+      "sale_start_date": "2022-07-03T23:00:00Z",
+      "price": null,
+      "announcement_date": "2022-07-03T23:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "FRAN LEBOWITZ - PUBLIC SPEAKING (FILM SCREENING)",
+      "ticket_types": [
+        {
+          "id": 257311,
+          "name": "Unreserved seating",
+          "price": {
+            "face_value": 900,
+            "fees": 90,
+            "total": 990
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-07-04/6bd04f59-cfe8-45ea-b367-d9f51042c8e0.jpg?rect=0%2C285%2C3300%2C1980",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-07-04/6bd04f59-cfe8-45ea-b367-d9f51042c8e0.jpg?rect=949%2C0%2C1403%2C2550",
+        "square": "https://dice-media.imgix.net/attachments/2022-07-04/6bd04f59-cfe8-45ea-b367-d9f51042c8e0.jpg?rect=375%2C0%2C2550%2C2550"
+      },
+      "age_limit": "This is an 18+ event",
+      "sold_out": false,
+      "sale_end_date": "2022-07-24T17:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/bc0e3cd80550",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "7:30 PM"
+        },
+        {
+          "details": "Fran Lebowitz - Public Speaking",
+          "time": "8:00 PM"
+        },
+        {
+          "details": "Film Screening",
+          "time": ""
+        }
+      ],
+      "id": "62c45980ee04e90001216489",
+      "genre_tags": ["film:documentary"],
+      "spotify_tracks": [],
+      "detailed_artists": [
+        {
+          "headliner": false,
+          "id": 11393,
+          "name": "Film Screening"
+        }
+      ],
+      "artists": ["Film Screening"],
+      "promoters": [
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        },
+        {
+          "id": 1357,
+          "name": "Deeper Into Movies"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "983EC13DEB78185983B5CB59F5EB9DD4",
+      "tags": ["type:film", "type:culture"],
+      "int_id": 149034,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-07-04/6bd04f59-cfe8-45ea-b367-d9f51042c8e0.jpg"
+      ],
+      "perm_name": "fran-lebowitz-public-speaking-film-screening-24th-jul-moth-club-london-tickets",
+      "hash": "825g5",
+      "date_end": "2022-07-24T21:30:00Z",
+      "date": "2022-07-24T18:30:00Z",
+      "type_tags": ["culture:film"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Deeper Into Movies. ",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "Filmmaker Martin Scorsese examines the life and work of author Fran Lebowitz.\nPublic Speaking captures the essence of legendary New York bestselling writer Fran Lebowitz, who is perhaps most known for her unique take on modern life. The film weaves together monologues, as well as footage from several of Lebowitz's speaking engagements, along with archival footage of Lebowitz from the 1970s to today which, showcases not only Lebowitz's unconventional worldview and experiences.\n\nFilm Screening\n\nPresented by Deeper Into Movies. \n\nThis is an 18+ event",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "‘Today, like a ship entering the storm, the world faces climate change-induced collapse. Once You Know, by director Emmanuel Cappellin, is a poetic and poignant exploration of how four of the world’s leading climate scientists and energy experts find the truth, chaos, and hope in their work.”\nThe Just Stop Oil Campaign is hosting a screening of the film ‘Once You Know’ at The Moth Club on the 27th of July.  This inspirational 2020 film by French Director Emmanuel Cappellin will be followed by talks from informed guest speakers. They will be discussing the climate crisis and holding a Q&A session. This event is free but do grab yourself a ticket as there is a limited capacity. The doors open at 6.30 pm, with the screening beginning at 7 pm. The film has a run time of 1h44m, the event is anticipated to end around 10 pm. The film is narrated in English, please let us know if you have any accessibility requests. The bar will be serving drinks and snacks during the event. \n\"A triumph. With rare aesthetic taste, it delivers the facts about our accelerating climate chaos with an almost tender respect for those of us confronting the crisis. Unforgettable portraits of climate leaders in Bangladesh, France, and the US, help make our own choices clear. They leave me feeling inspired to lead a life that is relevant to this global movement.\"\n— Joanna Macy, featured in A Wild Love for the World: Joanna Macy and the Work of Our Time\n\nWinner of; The DamsLab Mention at the Terra di Tutti Festival, The Grand Prize and Honorary Mention at the AFO CZU Film Festival, The Earth's Choice Award at the Earth Day Film Festival, The Jury Prize at the HKIFF Documentary Competition, The Audience Award at Another Way Film Festival, The Documentary Impact Award at The Global Sustainability Film Awards and The Best Documentary Award at the Festival international du film d'éducation d'Evreux.\nJust Stop Oil is a coalition of groups working together to ensure the Government commits to halting new fossil fuel licensing and production. We demand that the government immediately halt all future licensing and consents for the exploration, development and production of fossil fuels in the UK. The government's plans to give the green light to 40+ new North Sea oil and gas fields are not compatible with the recent strongly stated conclusions of reports commissioned by the IPCC and International Energy Agency (IEA) - that there must not be any new exploration of fossil fuels if we are to avoid imminent climate catastrophe.",
+      "sale_start_date": "2022-07-10T23:00:00Z",
+      "price": null,
+      "announcement_date": "2022-07-10T23:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "'Once You Know' Just Stop Oil Film Screening & Q&A",
+      "ticket_types": [
+        {
+          "id": 258568,
+          "name": "General Admission",
+          "price": {
+            "face_value": 0,
+            "fees": 0,
+            "total": 0
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-07-11/068031fb-2f45-44d1-8493-5b93fc956500.jpg?rect=0%2C1075%2C2834%2C1700",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-07-11/068031fb-2f45-44d1-8493-5b93fc956500.jpg?rect=358%2C0%2C2118%2C3850",
+        "square": "https://dice-media.imgix.net/attachments/2022-07-11/068031fb-2f45-44d1-8493-5b93fc956500.jpg?rect=0%2C508%2C2834%2C2834"
+      },
+      "age_limit": "This is an 18+ event",
+      "sold_out": false,
+      "sale_end_date": "2022-07-27T17:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/ia165fa70a5f",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "6:30 PM"
+        },
+        {
+          "details": "Film Screening",
+          "time": "7:00 PM"
+        },
+        {
+          "details": "Q&A session",
+          "time": "9:00 PM"
+        }
+      ],
+      "id": "62cbeabf65128e0001488880",
+      "genre_tags": ["film:independent", "film:documentary"],
+      "spotify_tracks": [],
+      "detailed_artists": [],
+      "artists": [],
+      "promoters": [
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "11E63256AFED6B7AA23E054A19306D99",
+      "tags": [],
+      "int_id": 149640,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-07-11/068031fb-2f45-44d1-8493-5b93fc956500.jpg"
+      ],
+      "perm_name": "once-you-know-just-stop-oil-film-screening-qa-27th-jul-moth-club-london-tickets",
+      "hash": "ymww2",
+      "date_end": "2022-07-27T21:30:00Z",
+      "date": "2022-07-27T17:30:00Z",
+      "type_tags": ["culture:film"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Just Stop Oil.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "‘Today, like a ship entering the storm, the world faces climate change-induced collapse. Once You Know, by director Emmanuel Cappellin, is a poetic and poignant exploration of how four of the world’s leading climate scientists and energy experts find the truth, chaos, and hope in their work.”\nThe Just Stop Oil Campaign is hosting a screening of the film ‘Once You Know’ at The Moth Club on the 27th of July.  This inspirational 2020 film by French Director Emmanuel Cappellin will be followed by talks from informed guest speakers. They will be discussing the climate crisis and holding a Q&A session. This event is free but do grab yourself a ticket as there is a limited capacity. The doors open at 6.30 pm, with the screening beginning at 7 pm. The film has a run time of 1h44m, the event is anticipated to end around 10 pm. The film is narrated in English, please let us know if you have any accessibility requests. The bar will be serving drinks and snacks during the event. \n\"A triumph. With rare aesthetic taste, it delivers the facts about our accelerating climate chaos with an almost tender respect for those of us confronting the crisis. Unforgettable portraits of climate leaders in Bangladesh, France, and the US, help make our own choices clear. They leave me feeling inspired to lead a life that is relevant to this global movement.\"\n— Joanna Macy, featured in A Wild Love for the World: Joanna Macy and the Work of Our Time\n\nWinner of; The DamsLab Mention at the Terra di Tutti Festival, The Grand Prize and Honorary Mention at the AFO CZU Film Festival, The Earth's Choice Award at the Earth Day Film Festival, The Jury Prize at the HKIFF Documentary Competition, The Audience Award at Another Way Film Festival, The Documentary Impact Award at The Global Sustainability Film Awards and The Best Documentary Award at the Festival international du film d'éducation d'Evreux.\nJust Stop Oil is a coalition of groups working together to ensure the Government commits to halting new fossil fuel licensing and production. We demand that the government immediately halt all future licensing and consents for the exploration, development and production of fossil fuels in the UK. The government's plans to give the green light to 40+ new North Sea oil and gas fields are not compatible with the recent strongly stated conclusions of reports commissioned by the IPCC and International Energy Agency (IEA) - that there must not be any new exploration of fossil fuels if we are to avoid imminent climate catastrophe.\n\nPresented by Just Stop Oil.\n\nThis is an 18+ event",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "Knock2bag Comedy Night, one of Time Out’s top 5 comedy clubs in London is back! Weekly at MOTH Club, bringing you an eclectic mix of big names and handpicked ‘ones to watch’.",
+      "sale_start_date": "2022-06-24T11:00:00Z",
+      "price": null,
+      "announcement_date": "2022-06-24T11:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "Knock2Bag presents... Lolly & Friends",
+      "ticket_types": [
+        {
+          "id": 252516,
+          "name": "Unreserved seating",
+          "price": {
+            "face_value": 1500,
+            "fees": 350,
+            "total": 1850
+          },
+          "sold_out": true
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-06-22/36db857d-8b7c-40cd-94cd-8168bc67f088.jpg?rect=0%2C69%2C2048%2C1229",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-06-22/36db857d-8b7c-40cd-94cd-8168bc67f088.jpg?rect=649%2C0%2C751%2C1366",
+        "square": "https://dice-media.imgix.net/attachments/2022-06-22/36db857d-8b7c-40cd-94cd-8168bc67f088.jpg?rect=341%2C0%2C1366%2C1366"
+      },
+      "age_limit": "This is an 18+ event",
+      "sold_out": true,
+      "sale_end_date": "2022-07-28T18:30:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/Ofe2774dc241",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "7:30 PM"
+        },
+        {
+          "details": "Lolly Adefope",
+          "time": ""
+        }
+      ],
+      "id": "62b426efc561200001456b1e",
+      "genre_tags": ["comedy:comedy"],
+      "spotify_tracks": [],
+      "detailed_artists": [
+        {
+          "headliner": false,
+          "id": 10593,
+          "name": "Lolly Adefope"
+        }
+      ],
+      "artists": ["Lolly Adefope"],
+      "promoters": [
+        {
+          "id": 1579,
+          "name": "Knock2Bag"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "3EE4643AD2EF51242767BB5D03903E95",
+      "tags": [],
+      "int_id": 146951,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-06-22/36db857d-8b7c-40cd-94cd-8168bc67f088.jpg"
+      ],
+      "perm_name": "knock2bag-presents-lolly-friends-28th-jul-moth-club-london-tickets",
+      "hash": "lebqp",
+      "date_end": "2022-07-28T22:30:00Z",
+      "date": "2022-07-28T18:30:00Z",
+      "type_tags": ["culture:comedy"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Knock2Bag.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "Knock2bag Comedy Night, one of Time Out’s top 5 comedy clubs in London is back! Weekly at MOTH Club, bringing you an eclectic mix of big names and handpicked ‘ones to watch’.\n\nPresented by Knock2Bag.\n\nThis is an 18+ event",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "Phil Mackie's 70th Birthday featuring Charles Hayward and some special guests.",
+      "sale_start_date": "2022-05-09T09:45:00Z",
+      "price": null,
+      "announcement_date": "2022-05-09T09:45:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "Phil Mackie's 70th Birthday",
+      "ticket_types": [
+        {
+          "id": 230752,
+          "name": "General Admission",
+          "price": {
+            "face_value": 0,
+            "fees": 0,
+            "total": 0
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-07-05/5d9cf896-5f92-47ae-91e0-515582360a55.jpg?rect=0%2C564%2C1400%2C840",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-07-05/5d9cf896-5f92-47ae-91e0-515582360a55.jpg?rect=159%2C0%2C1082%2C1968",
+        "square": "https://dice-media.imgix.net/attachments/2022-07-05/5d9cf896-5f92-47ae-91e0-515582360a55.jpg?rect=0%2C284%2C1400%2C1400"
+      },
+      "age_limit": "This is an 18+ event",
+      "sold_out": false,
+      "sale_end_date": "2022-07-29T16:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/Xb9be2639642",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "7:00 PM"
+        },
+        {
+          "details": "Charles Hayward",
+          "time": ""
+        },
+        {
+          "details": "Modern Technology",
+          "time": ""
+        }
+      ],
+      "id": "6278de235fded90001865eb1",
+      "genre_tags": ["gig:rock", "gig:instrumental"],
+      "spotify_tracks": [
+        {
+          "open_url": "https://open.spotify.com/track/3dJjlqOJtzfy7h3NLgk6Wh",
+          "preview_url": "https://p.scdn.co/mp3-preview/171c171c2139f7cc49045da4f71784204b12b862?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Thames Water Authority"
+        }
+      ],
+      "detailed_artists": [
+        {
+          "headliner": false,
+          "id": 25896,
+          "name": "Modern Technology"
+        },
+        {
+          "headliner": false,
+          "id": 14221,
+          "name": "Charles Hayward"
+        }
+      ],
+      "artists": ["Modern Technology", "Charles Hayward"],
+      "promoters": [
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        },
+        {
+          "id": 927,
+          "name": "Baba Yaga's Hut"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "AC1DEC63374BD8850A46B93A8EE5DEA1",
+      "tags": [],
+      "int_id": 137723,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-07-05/5d9cf896-5f92-47ae-91e0-515582360a55.jpg"
+      ],
+      "perm_name": "phil-mackies-70th-birthday-29th-jul-moth-club-london-tickets",
+      "hash": "olmkr",
+      "date_end": "2022-07-29T21:00:00Z",
+      "date": "2022-07-29T18:00:00Z",
+      "type_tags": ["music:gig"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by LNZRT LTD & Baba Yaga's Hut.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "Phil Mackie's 70th Birthday featuring Charles Hayward and some special guests.\n\nPresented by LNZRT LTD & Baba Yaga's Hut.\n\nThis is an 18+ event",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "Deptford Northern Soul Club are childhood friends, Will Foot and Lewis Henderson, whose early love of soul developed after discovering Lewis’ Dad’s record collection. After finally bringing their musical heritage to the forefront with their debut DJ set at Deptford’s Bunker Club 4 years ago, they have since taken their credible and unique club night around the UK, performing at the likes of Glastonbury festival and Green Man, alongside a residency at Manchester’s YES, their beloved Bunker Club and London’s Moth Club.\nWhether behind a turntable, dancing out front or in discussion, their sheer love and passion for soul is infectious, as is the spark of friendship and mutual musical appreciation between the two of them. 27-years-old but with old heads on their sharply dressed young shoulders, they have emerged as the new face of Northern Soul, bringing the movement back into the conversation of modern dance music.\n",
+      "sale_start_date": "2022-06-01T08:00:00Z",
+      "price": null,
+      "announcement_date": "2022-06-01T08:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "Deptford Northern Soul Club ",
+      "ticket_types": [
+        {
+          "id": 239992,
+          "name": "General admission",
+          "price": {
+            "face_value": 800,
+            "fees": 100,
+            "total": 900
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-05-28/cb40c217-8b65-4878-a086-6e178bb7a2ba.jpg?rect=0%2C195%2C960%2C570",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-05-28/cb40c217-8b65-4878-a086-6e178bb7a2ba.jpg?rect=213%2C0%2C533%2C960",
+        "square": "https://dice-media.imgix.net/attachments/2022-05-28/cb40c217-8b65-4878-a086-6e178bb7a2ba.jpg?rect=0%2C0%2C960%2C960"
+      },
+      "age_limit": "This is an 18+ event.",
+      "sold_out": false,
+      "sale_end_date": "2022-07-30T00:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/f74747e6a208",
+      "apple_music_tracks": [],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "10:00 PM"
+        }
+      ],
+      "id": "6294a01f4bb64c0001f97441",
+      "genre_tags": ["dj:soul"],
+      "spotify_tracks": [],
+      "detailed_artists": [],
+      "artists": [],
+      "promoters": [
+        {
+          "id": 5988,
+          "name": "Deptford Northern Soul Club"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "50743FDFB0184BB492DD559CE9DB9676",
+      "tags": [],
+      "int_id": 141956,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-05-28/cb40c217-8b65-4878-a086-6e178bb7a2ba.jpg"
+      ],
+      "perm_name": "deptford-northern-soul-club-29th-jul-moth-club-london-tickets",
+      "hash": "neme5",
+      "date_end": "2022-07-30T01:00:00Z",
+      "date": "2022-07-29T21:00:00Z",
+      "type_tags": ["music:dj"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Deptford Northern Soul Club.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "Deptford Northern Soul Club are childhood friends, Will Foot and Lewis Henderson, whose early love of soul developed after discovering Lewis’ Dad’s record collection. After finally bringing their musical heritage to the forefront with their debut DJ set at Deptford’s Bunker Club 4 years ago, they have since taken their credible and unique club night around the UK, performing at the likes of Glastonbury festival and Green Man, alongside a residency at Manchester’s YES, their beloved Bunker Club and London’s Moth Club.\nWhether behind a turntable, dancing out front or in discussion, their sheer love and passion for soul is infectious, as is the spark of friendship and mutual musical appreciation between the two of them. 27-years-old but with old heads on their sharply dressed young shoulders, they have emerged as the new face of Northern Soul, bringing the movement back into the conversation of modern dance music.\n\n\nPresented by Deptford Northern Soul Club.\n\nThis is an 18+ event.",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "For the last 20 years the \"Hello GoodBye Show\" has proven itself a pillar of the anti-establishment, offering a consistent and supportive platform for quite literally thousands of left-field and counter-cultural artists, and while some were near household names (Ari Up / Pete Seeger), and others would go on to achieve wide acclaim (Sleaford Mods / This Is The Kit), the vast majority of live guests would continue to gleefully plough their own idiosyncratic furrows, with never an inkling to pander to, nor placate any pre-conceived idea of mainstream ideal.\n\nIt feels fully holistic to collaborate with Upset The Rhythm for HG20, a triptych of consecutive concerts held in celebration of The Hello GoodBye Show’s 20th birthday, as Chris Tipton from UTR himself first appeared as a guest on HG back in 2007 with the boisterous brevity biased band Hands On Heads and later again with the psycho-geographically prone duo Way Through.\n\nAll profits made from HG20 will go directly towards helping Resonance FM return to live programming as soon as possible. \n\nThis series of Resonance FM fundraisers will take place in the atmospheric and intimate location of The Memorable Order Of Tin Hats Club (M.O.T.H. Club) over three consecutive nights; Saturday 30th July, Sunday 31st July & Monday 1st August.\n\nThe deXter Bentley Hello GoodBye Show originally began broadcasting back in May 2002, as part of a small team of autonomous program makers, creating freewheeling and innovative new content for the advent of the avant-garde, arts radio station Resonance FM, the first community based, not-for-profit, arts radio station in London.\n\nThe genesis of Resonance FM can be traced to John Peel’s Meltdown in 1998, when the LMC (London Musician’s Collective) were invited to broadcast an experimental radio station over the course of the festival on a localised bandwidth from The Southbank Centre on The River Thames. \n\nIn 2002 Resonance FM was awarded the licence to broadcast over the 104.4 FM wavelength in Central London, and over the following five years (2002-2007) it was situated in the heart of Tin-Pan-Alley on Denmark Street. Over the past 14 years Resonance FM has been based on Borough High Street but during the pandemic it has been forced to relocate once again and is currently painstakingly repurposing an old abandoned chapel in SE1.\n\ndeXter Bentley continues to aspire to the two worded mantra/manifesto that was originally bestowed upon him by Resonance FM Station Manager Ed Baxter, who said, ‘BE BOLD!’.",
+      "sale_start_date": "2022-04-06T08:00:00Z",
+      "price": null,
+      "announcement_date": "2022-04-06T08:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "HG20: A three-day fundraiser celebrating 20 years of Hello Goodbye and Resonance FM",
+      "ticket_types": [
+        {
+          "id": 213996,
+          "name": "General Admission ",
+          "price": {
+            "face_value": 2500,
+            "fees": 250,
+            "total": 2750
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg?rect=10%2C21%2C3508%2C2083",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg?rect=68%2C0%2C2756%2C4961",
+        "square": "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg?rect=0%2C25%2C3508%2C3508"
+      },
+      "age_limit": "This is a 18+ event. ",
+      "sold_out": false,
+      "sale_end_date": "2022-08-01T17:30:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/d8d4e5155543",
+      "apple_music_tracks": [
+        {
+          "open_url": "https://itunes.apple.com/gb/album/whole-wide-world/1208495231?i=1208495919&uo=4&at=1001ld8Z&ct=app_event",
+          "preview_url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview111/v4/a2/3b/4f/a23b4fda-62a1-434a-3c76-d9658ac0ad48/mzaf_5792598368698990013.plus.aac.p.m4a",
+          "title": "Wreckless Eric - Whole Wide World"
+        }
+      ],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "7:30 PM"
+        },
+        {
+          "details": "wreckless eric",
+          "time": ""
+        },
+        {
+          "details": "Meatraffle",
+          "time": ""
+        },
+        {
+          "details": "Lilith Ai",
+          "time": ""
+        },
+        {
+          "details": "The Monochrome Set",
+          "time": ""
+        },
+        {
+          "details": "The Mindreaders",
+          "time": ""
+        },
+        {
+          "details": "Dee Byrne",
+          "time": ""
+        },
+        {
+          "details": "Cath Roberts",
+          "time": ""
+        },
+        {
+          "details": "Gina Birch",
+          "time": ""
+        },
+        {
+          "details": "Bas Jan",
+          "time": ""
+        },
+        {
+          "details": "Rozi Plain (DJ Set)",
+          "time": ""
+        }
+      ],
+      "id": "624c331460890600019d47cd",
+      "genre_tags": ["gig:folk"],
+      "spotify_tracks": [
+        {
+          "open_url": "https://open.spotify.com/track/6H8x9OGuSauCiC5dsYDqpZ",
+          "preview_url": "https://p.scdn.co/mp3-preview/ef5d8c4b72d1d0d2cfc0b32ae52df235624e83f0?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "'Ndrangheta Allotment"
+        },
+        {
+          "open_url": "https://open.spotify.com/track/761RRigrsKcUbcUEY4loOF",
+          "preview_url": "https://p.scdn.co/mp3-preview/605a34a3ec120668aa913f99b4f15ab5fba9350a?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Black Cherry"
+        },
+        {
+          "open_url": "https://open.spotify.com/track/56GfTAFHN8HMuKEJwUSJnY",
+          "preview_url": "https://p.scdn.co/mp3-preview/5ac95d1a0b0446af34863e90d7b7b091faf29d3e?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Eine Symphonie Des Grauens"
+        },
+        {
+          "open_url": "https://open.spotify.com/track/0gAqiSfqEgrzwKDUnyvpm4",
+          "preview_url": "https://p.scdn.co/mp3-preview/48f5383c027d86f6770551a4aec8685aeb926ef7?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "The Mindreaders - It's Bagtime"
+        },
+        {
+          "open_url": "https://open.spotify.com/track/19hw73UWugX8RqproS8rfR",
+          "preview_url": "https://p.scdn.co/mp3-preview/9cc8d825cf3bc396dd0252280970a9e44c90fd9f?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Oli Kuster, Cyrill Ferrari, Dee Byrne - Silicon Intersection"
+        },
+        {
+          "open_url": "https://open.spotify.com/track/2NlEHccb2wgHSOxyHEBZtk",
+          "preview_url": "https://p.scdn.co/mp3-preview/63abd5bf0aef6dbc6b493a9ee270f4ff9684227b?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Gina Birch - Feminist Song"
+        },
+        {
+          "open_url": "https://open.spotify.com/track/5hCsWi2qWUqjeGUCT5bbMO",
+          "preview_url": "https://p.scdn.co/mp3-preview/24ed396d240e18aa42807374e9c91eef55082a1a?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Inner Circle"
+        }
+      ],
+      "detailed_artists": [
+        {
+          "headliner": false,
+          "id": 46985,
+          "name": "Cath Roberts"
+        },
+        {
+          "headliner": false,
+          "id": 46872,
+          "name": "Gina Birch"
+        },
+        {
+          "headliner": false,
+          "id": 46871,
+          "name": "Dee Byrne"
+        },
+        {
+          "headliner": false,
+          "id": 46870,
+          "name": "The Mindreaders"
+        },
+        {
+          "headliner": false,
+          "id": 33732,
+          "name": "Lilith Ai"
+        },
+        {
+          "headliner": false,
+          "id": 8096,
+          "name": "Bas Jan"
+        },
+        {
+          "headliner": false,
+          "id": 6836,
+          "name": "wreckless eric"
+        },
+        {
+          "headliner": false,
+          "id": 6008,
+          "name": "The Monochrome Set"
+        },
+        {
+          "headliner": false,
+          "id": 2622,
+          "name": "Meatraffle"
+        },
+        {
+          "headliner": false,
+          "id": 207,
+          "name": "Rozi Plain"
+        }
+      ],
+      "artists": [
+        "Cath Roberts",
+        "Gina Birch",
+        "Dee Byrne",
+        "The Mindreaders",
+        "Lilith Ai",
+        "Bas Jan",
+        "wreckless eric",
+        "The Monochrome Set",
+        "Meatraffle",
+        "Rozi Plain"
+      ],
+      "promoters": [
+        {
+          "id": 34,
+          "name": "Upset The Rhythm"
+        },
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "0ABE344FFD27C88BFAB13CFE9A823775",
+      "tags": [
+        "type:gig",
+        "genre:electronic",
+        "genre:folk",
+        "genre:singersongwriter",
+        "genre:postpunk",
+        "genre:alternative",
+        "genre:rock",
+        "genre:punk",
+        "genre:jazz",
+        "genre:newwave",
+        "genre:progressive jazz"
+      ],
+      "int_id": 130869,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg"
+      ],
+      "perm_name": "hg20-a-three-day-fundraiser-celebrating-20-years-of-hello-goodbye-and-resonance-fm-30th-jul-moth-club-london-tickets",
+      "hash": "e2p76",
+      "date_end": "2022-08-01T22:00:00Z",
+      "date": "2022-07-30T18:30:00Z",
+      "type_tags": ["music:gig"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Upset The Rhythm.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "For the last 20 years the \"Hello GoodBye Show\" has proven itself a pillar of the anti-establishment, offering a consistent and supportive platform for quite literally thousands of left-field and counter-cultural artists, and while some were near household names (Ari Up / Pete Seeger), and others would go on to achieve wide acclaim (Sleaford Mods / This Is The Kit), the vast majority of live guests would continue to gleefully plough their own idiosyncratic furrows, with never an inkling to pander to, nor placate any pre-conceived idea of mainstream ideal.\n\nIt feels fully holistic to collaborate with Upset The Rhythm for HG20, a triptych of consecutive concerts held in celebration of The Hello GoodBye Show’s 20th birthday, as Chris Tipton from UTR himself first appeared as a guest on HG back in 2007 with the boisterous brevity biased band Hands On Heads and later again with the psycho-geographically prone duo Way Through.\n\nAll profits made from HG20 will go directly towards helping Resonance FM return to live programming as soon as possible. \n\nThis series of Resonance FM fundraisers will take place in the atmospheric and intimate location of The Memorable Order Of Tin Hats Club (M.O.T.H. Club) over three consecutive nights; Saturday 30th July, Sunday 31st July & Monday 1st August.\n\nThe deXter Bentley Hello GoodBye Show originally began broadcasting back in May 2002, as part of a small team of autonomous program makers, creating freewheeling and innovative new content for the advent of the avant-garde, arts radio station Resonance FM, the first community based, not-for-profit, arts radio station in London.\n\nThe genesis of Resonance FM can be traced to John Peel’s Meltdown in 1998, when the LMC (London Musician’s Collective) were invited to broadcast an experimental radio station over the course of the festival on a localised bandwidth from The Southbank Centre on The River Thames. \n\nIn 2002 Resonance FM was awarded the licence to broadcast over the 104.4 FM wavelength in Central London, and over the following five years (2002-2007) it was situated in the heart of Tin-Pan-Alley on Denmark Street. Over the past 14 years Resonance FM has been based on Borough High Street but during the pandemic it has been forced to relocate once again and is currently painstakingly repurposing an old abandoned chapel in SE1.\n\ndeXter Bentley continues to aspire to the two worded mantra/manifesto that was originally bestowed upon him by Resonance FM Station Manager Ed Baxter, who said, ‘BE BOLD!’.\n\nPresented by Upset The Rhythm.\n\nThis is a 18+ event. ",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "For the last 20 years the \"Hello GoodBye Show\" has proven itself a pillar of the anti-establishment, offering a consistent and supportive platform for quite literally thousands of left-field and counter-cultural artists, and while some were near household names (Ari Up / Pete Seeger), and others would go on to achieve wide acclaim (Sleaford Mods / This Is The Kit), the vast majority of live guests would continue to gleefully plough their own idiosyncratic furrows, with never an inkling to pander to, nor placate any pre-conceived idea of mainstream ideal.\n\nIt feels fully holistic to collaborate with Upset The Rhythm for HG20, a triptych of consecutive concerts held in celebration of The Hello GoodBye Show’s 20th birthday, as Chris Tipton from UTR himself first appeared as a guest on HG back in 2007 with the boisterous brevity biased band Hands On Heads and later again with the psycho-geographically prone duo Way Through.\n\nAll profits made from HG20 will go directly towards helping Resonance FM return to live programming as soon as possible. \n\nThis series of Resonance FM fundraisers will take place in the atmospheric and intimate location of The Memorable Order Of Tin Hats Club (M.O.T.H. Club) over three consecutive nights; Saturday 30th July, Sunday 31st July & Monday 1st August.\n\nThe deXter Bentley Hello GoodBye Show originally began broadcasting back in May 2002, as part of a small team of autonomous program makers, creating freewheeling and innovative new content for the advent of the avant-garde, arts radio station Resonance FM, the first community based, not-for-profit, arts radio station in London.\n\nThe genesis of Resonance FM can be traced to John Peel’s Meltdown in 1998, when the LMC (London Musician’s Collective) were invited to broadcast an experimental radio station over the course of the festival on a localised bandwidth from The Southbank Centre on The River Thames. \n\nIn 2002 Resonance FM was awarded the licence to broadcast over the 104.4 FM wavelength in Central London, and over the following five years (2002-2007) it was situated in the heart of Tin-Pan-Alley on Denmark Street. Over the past 14 years Resonance FM has been based on Borough High Street but during the pandemic it has been forced to relocate once again and is currently painstakingly repurposing an old abandoned chapel in SE1.\n\ndeXter Bentley continues to aspire to the two worded mantra/manifesto that was originally bestowed upon him by Resonance FM Station Manager Ed Baxter, who said, ‘BE BOLD!’.\n\nWRECKLESS ERIC is Eric Goulden. He was given the name to hide behind. After a while he realized he was stuck with it. Onstage he hides behind nothing, he tells the truth with big open chords, lilting enchantment, squalls of feedback, dissonance, bizarre stories and backchat. Eric began his recording life on Stiff Records in 1977 with his enduring hit Whole Wide World when he was little more than an ex-teenage art student. Eventually he sidestepped the mechanics of stardom to become Britain’s biggest underground household name, much loved and often underestimated. His 2015 album ‘amERICa’ reminded those who’ve kept the faith and new generations of fans what he’s all about. He won’t recreate 1978 for you, he’ll blow your mind instead.\\nhttps://wrecklesseric.com/\n\nMEATRAFFLE is a common chord running through the leftist brigades of the South London art scene. For Meatraffle it is the political, the platonic, the comradeship of the struggle that provides true artistic grist.\n\nLILITH AI is a guitarist, who writes and performs poignant tales of modern life. Hailing from nowhere special, Lilith began releasing lo-fi bedroom recordings in 2016. Her first EP RIOT is full of underground anthems popular with Riot grrrls word wide. Her second EP Native Tongue chronicles her teen years, spent living on the streets of Queens New York. 2019 saw the release of 3rd EP Bare Radical with evolving sounds.  Lilith's artfully delivered songs fit somewhere between indie pop and anti-folk.\n\n",
+      "sale_start_date": "2022-04-06T08:00:00Z",
+      "price": null,
+      "announcement_date": "2022-04-06T08:00:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "HG20: A three-day fundraiser celebrating 20 years of Hello Goodbye and Resonance FM - DAY 1",
+      "ticket_types": [
+        {
+          "id": 213990,
+          "name": "General Admission",
+          "price": {
+            "face_value": 1000,
+            "fees": 100,
+            "total": 1100
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg?rect=10%2C21%2C3508%2C2083",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg?rect=68%2C0%2C2756%2C4961",
+        "square": "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg?rect=0%2C25%2C3508%2C3508"
+      },
+      "age_limit": "This is a 18+ event. ",
+      "sold_out": false,
+      "sale_end_date": "2022-07-30T17:30:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/I95c79a6c44c",
+      "apple_music_tracks": [
+        {
+          "open_url": "https://itunes.apple.com/gb/album/whole-wide-world/1208495231?i=1208495919&uo=4&at=1001ld8Z&ct=app_event",
+          "preview_url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview111/v4/a2/3b/4f/a23b4fda-62a1-434a-3c76-d9658ac0ad48/mzaf_5792598368698990013.plus.aac.p.m4a",
+          "title": "Wreckless Eric - Whole Wide World"
+        }
+      ],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "7:30 PM"
+        },
+        {
+          "details": "wreckless eric",
+          "time": ""
+        },
+        {
+          "details": "Meatraffle",
+          "time": ""
+        },
+        {
+          "details": "Lilith Ai",
+          "time": ""
+        }
+      ],
+      "id": "624c30a460890600019d46ef",
+      "genre_tags": ["gig:singersongwriter", "gig:bedroompop", "gig:alternative"],
+      "spotify_tracks": [
+        {
+          "open_url": "https://open.spotify.com/track/6H8x9OGuSauCiC5dsYDqpZ",
+          "preview_url": "https://p.scdn.co/mp3-preview/ef5d8c4b72d1d0d2cfc0b32ae52df235624e83f0?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "'Ndrangheta Allotment"
+        },
+        {
+          "open_url": "https://open.spotify.com/track/761RRigrsKcUbcUEY4loOF",
+          "preview_url": "https://p.scdn.co/mp3-preview/605a34a3ec120668aa913f99b4f15ab5fba9350a?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Black Cherry"
+        }
+      ],
+      "detailed_artists": [
+        {
+          "headliner": false,
+          "id": 33732,
+          "name": "Lilith Ai"
+        },
+        {
+          "headliner": false,
+          "id": 6836,
+          "name": "wreckless eric"
+        },
+        {
+          "headliner": false,
+          "id": 2622,
+          "name": "Meatraffle"
+        }
+      ],
+      "artists": ["Lilith Ai", "wreckless eric", "Meatraffle"],
+      "promoters": [
+        {
+          "id": 34,
+          "name": "Upset The Rhythm"
+        },
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "728777540B42C2E2F92516F0243EE6BA",
+      "tags": ["type:gig", "genre:singersongwriter", "genre:alternative", "genre:punk"],
+      "int_id": 130864,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-04-04/90a37639-18c7-4e51-acea-45150395423f.jpg"
+      ],
+      "perm_name": "hg20-a-three-day-fundraiser-celebrating-20-years-of-hello-goodbye-and-resonance-fm-day-1-30th-jul-moth-club-london-tickets",
+      "hash": "yk7va",
+      "date_end": "2022-07-30T21:30:00Z",
+      "date": "2022-07-30T18:30:00Z",
+      "type_tags": ["music:gig"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by Upset The Rhythm.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "For the last 20 years the \"Hello GoodBye Show\" has proven itself a pillar of the anti-establishment, offering a consistent and supportive platform for quite literally thousands of left-field and counter-cultural artists, and while some were near household names (Ari Up / Pete Seeger), and others would go on to achieve wide acclaim (Sleaford Mods / This Is The Kit), the vast majority of live guests would continue to gleefully plough their own idiosyncratic furrows, with never an inkling to pander to, nor placate any pre-conceived idea of mainstream ideal.\n\nIt feels fully holistic to collaborate with Upset The Rhythm for HG20, a triptych of consecutive concerts held in celebration of The Hello GoodBye Show’s 20th birthday, as Chris Tipton from UTR himself first appeared as a guest on HG back in 2007 with the boisterous brevity biased band Hands On Heads and later again with the psycho-geographically prone duo Way Through.\n\nAll profits made from HG20 will go directly towards helping Resonance FM return to live programming as soon as possible. \n\nThis series of Resonance FM fundraisers will take place in the atmospheric and intimate location of The Memorable Order Of Tin Hats Club (M.O.T.H. Club) over three consecutive nights; Saturday 30th July, Sunday 31st July & Monday 1st August.\n\nThe deXter Bentley Hello GoodBye Show originally began broadcasting back in May 2002, as part of a small team of autonomous program makers, creating freewheeling and innovative new content for the advent of the avant-garde, arts radio station Resonance FM, the first community based, not-for-profit, arts radio station in London.\n\nThe genesis of Resonance FM can be traced to John Peel’s Meltdown in 1998, when the LMC (London Musician’s Collective) were invited to broadcast an experimental radio station over the course of the festival on a localised bandwidth from The Southbank Centre on The River Thames. \n\nIn 2002 Resonance FM was awarded the licence to broadcast over the 104.4 FM wavelength in Central London, and over the following five years (2002-2007) it was situated in the heart of Tin-Pan-Alley on Denmark Street. Over the past 14 years Resonance FM has been based on Borough High Street but during the pandemic it has been forced to relocate once again and is currently painstakingly repurposing an old abandoned chapel in SE1.\n\ndeXter Bentley continues to aspire to the two worded mantra/manifesto that was originally bestowed upon him by Resonance FM Station Manager Ed Baxter, who said, ‘BE BOLD!’.\n\nWRECKLESS ERIC is Eric Goulden. He was given the name to hide behind. After a while he realized he was stuck with it. Onstage he hides behind nothing, he tells the truth with big open chords, lilting enchantment, squalls of feedback, dissonance, bizarre stories and backchat. Eric began his recording life on Stiff Records in 1977 with his enduring hit Whole Wide World when he was little more than an ex-teenage art student. Eventually he sidestepped the mechanics of stardom to become Britain’s biggest underground household name, much loved and often underestimated. His 2015 album ‘amERICa’ reminded those who’ve kept the faith and new generations of fans what he’s all about. He won’t recreate 1978 for you, he’ll blow your mind instead.\\nhttps://wrecklesseric.com/\n\nMEATRAFFLE is a common chord running through the leftist brigades of the South London art scene. For Meatraffle it is the political, the platonic, the comradeship of the struggle that provides true artistic grist.\n\nLILITH AI is a guitarist, who writes and performs poignant tales of modern life. Hailing from nowhere special, Lilith began releasing lo-fi bedroom recordings in 2016. Her first EP RIOT is full of underground anthems popular with Riot grrrls word wide. Her second EP Native Tongue chronicles her teen years, spent living on the streets of Queens New York. 2019 saw the release of 3rd EP Bare Radical with evolving sounds.  Lilith's artfully delivered songs fit somewhere between indie pop and anti-folk.\n\n\n\nPresented by Upset The Rhythm.\n\nThis is a 18+ event. ",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    },
+    {
+      "show_price_breakdown": false,
+      "linkout_type": null,
+      "raw_description": "A Love Letter To Daft Punk is a club night that will cover the pioneering electro duo's insane back catalogue, which spans nearly three decades of late nights, as well as their influences, counterparts, affiliates and peers.\nExpect bags of electro, dance-punk, electroclash and more to make you feel Human After All...",
+      "sale_start_date": "2022-05-12T13:30:00Z",
+      "price": null,
+      "announcement_date": "2022-05-12T13:30:00Z",
+      "venue": "MOTH Club",
+      "status": "on-sale",
+      "name": "A Love Letter to Daft Punk",
+      "ticket_types": [
+        {
+          "id": 232580,
+          "name": "General Admission",
+          "price": {
+            "face_value": 800,
+            "fees": 80,
+            "total": 880
+          },
+          "sold_out": false
+        }
+      ],
+      "timezone": "Europe/London",
+      "event_images": {
+        "brand": null,
+        "landscape": "https://dice-media.imgix.net/attachments/2022-05-12/266e5342-aa43-4689-a139-2b20143e0d95.jpg?rect=0%2C50%2C1501%2C901",
+        "portrait": "https://dice-media.imgix.net/attachments/2022-05-12/266e5342-aa43-4689-a139-2b20143e0d95.jpg?rect=476%2C0%2C550%2C1000",
+        "square": "https://dice-media.imgix.net/attachments/2022-05-12/266e5342-aa43-4689-a139-2b20143e0d95.jpg?rect=251%2C0%2C1000%2C1000"
+      },
+      "age_limit": "This is an 18+ event",
+      "sold_out": false,
+      "sale_end_date": "2022-07-31T01:00:00Z",
+      "type": "event",
+      "destination_event_perm_name": null,
+      "url": "https://link.dice.fm/N0ffbb1902eb",
+      "apple_music_tracks": [
+        {
+          "open_url": "https://music.apple.com/us/album/around-the-world/696884422?i=696886431&uo=4&at=1001ld8Z&ct=app_event",
+          "preview_url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/22/1a/ee221ab0-02dd-7290-47e7-383ad9c81e3b/mzaf_912969547193259322.plus.aac.p.m4a",
+          "title": "Daft Punk - Around the World"
+        }
+      ],
+      "lineup": [
+        {
+          "details": "Doors open",
+          "time": "11:00 PM"
+        }
+      ],
+      "id": "627d0a584835800001d15e80",
+      "genre_tags": ["dj:electronic"],
+      "spotify_tracks": [
+        {
+          "open_url": "https://open.spotify.com/track/1pKYYY0dkg23sQQXi0Q5zN",
+          "preview_url": "https://p.scdn.co/mp3-preview/ca11ade2481e30125511e5debba069379c1d40d6?cid=921526b9c2da4b7b96e197790a02347e",
+          "title": "Daft Punk - Around the World"
+        }
+      ],
+      "detailed_artists": [],
+      "artists": [],
+      "promoters": [
+        {
+          "id": 245,
+          "name": "LNZRT LTD"
+        }
+      ],
+      "location": {
+        "accuracy": 0,
+        "city": "London",
+        "country": "United Kingdom",
+        "lat": 51.5450825,
+        "lng": -0.0546326999999565,
+        "place": "Europe/London"
+      },
+      "checksum": "4793CCC2297864802CE2F9D1F62EEFED",
+      "tags": [],
+      "int_id": 138565,
+      "images": [
+        "https://dice-media.imgix.net/attachments/2022-05-12/266e5342-aa43-4689-a139-2b20143e0d95.jpg"
+      ],
+      "perm_name": "a-love-letter-to-daft-punk-30th-jul-moth-club-london-tickets",
+      "hash": "xpvkk",
+      "date_end": "2022-07-31T02:00:00Z",
+      "date": "2022-07-30T22:00:00Z",
+      "type_tags": ["music:dj"],
+      "flags": ["qr-code", "going_ahead"],
+      "presented_by": "Presented by LNZRT LTD.",
+      "links": [],
+      "destination_event_id": null,
+      "external_url": null,
+      "description": "A Love Letter To Daft Punk is a club night that will cover the pioneering electro duo's insane back catalogue, which spans nearly three decades of late nights, as well as their influences, counterparts, affiliates and peers.\nExpect bags of electro, dance-punk, electroclash and more to make you feel Human After All...\n\nPresented by LNZRT LTD.\n\nThis is an 18+ event",
+      "featured": false,
+      "address": "Old Trades Hall, Valette Street, London E9 6NU",
+      "currency": "GBP",
+      "venues": [
+        {
+          "city": {
+            "code": "london",
+            "country_alpha3": "GBR",
+            "country_id": "54d8a87238fe5d27d500988a",
+            "country_name": "United Kingdom",
+            "id": "54d8a23438fe5d27d500001c",
+            "name": "London"
+          },
+          "id": 43,
+          "name": "MOTH Club"
+        }
+      ],
+      "cities": [
+        {
+          "code": "london",
+          "country_alpha3": "GBR",
+          "country_id": "54d8a87238fe5d27d500988a",
+          "country_name": "United Kingdom",
+          "id": "54d8a23438fe5d27d500001c",
+          "name": "London"
+        }
+      ]
+    }
+  ],
+  "links": {
+    "next": "https://events-api.dice.fm/v1/events?filter[venues]=Moth+Club&page[number]=2&page[size]=12",
+    "self": "https://events-api.dice.fm/v1/events?filter[venues]=Moth+Club&page[size]=12"
+  }
+}

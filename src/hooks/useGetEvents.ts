@@ -27,8 +27,7 @@ const useGetEvents = <T>({ onCompleted }: UseGetEventsProps<T>) => {
         throw new Error(errorMessage)
       }
     } catch (err) {
-      const errorMessage = err as { message: string }
-      setError(errorMessage.message)
+      setError('Oops, failed to load events!')
     }
     onCompleted(apiData)
     setLoading(false)
