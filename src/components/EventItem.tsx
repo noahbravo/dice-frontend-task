@@ -141,6 +141,7 @@ const EventItem = ({
           css={buttonBaseStyle}
           tw="flex justify-between w-full bg-dark-container-color px-4 py-2.5 hover:bg-darken-container-color"
           type="button"
+          aria-label="toggle event content"
           onClick={onToggle}
         >
           <strong>More info</strong>
@@ -150,7 +151,7 @@ const EventItem = ({
           <div tw="p-4">
             <p tw="leading-6">{description}</p>
             <div tw="mt-6 mb-8">
-              <strong tw="flex text-accent-color uppercase text-font-sm mb-2">Line Up</strong>
+              <strong tw="flex text-accent-color uppercase text-font-sm mb-3">Line Up</strong>
               <ul>
                 {lineup.map(({ details: lineupDetails, time: lineupTime }, index) => (
                   <li key={`${id}_${lineupDetails}_${lineupTime || index}`} tw="mt-2">
@@ -161,18 +162,18 @@ const EventItem = ({
               </ul>
             </div>
             <div>
-              <strong tw="flex text-accent-color uppercase text-font-sm mb-4">Tickets</strong>
+              <strong tw="flex text-accent-color uppercase text-font-sm mb-3">Tickets</strong>
               {ticketTypes?.length && (
                 <ul>
-                  {ticketTypes.map(({ name: ticketName, price: ticketPrice }) => {
+                  {ticketTypes.map(({ name: ticketName, price: ticketPrice, id: ticketId }) => {
                     const { total: totalTicketPrice } = ticketPrice || {}
                     return (
-                      <div key={`${id}_${ticketName}`}>
+                      <li key={`${id}_${ticketId}`} tw="mt-2">
                         <span>{ticketName}</span>
                         {totalTicketPrice && (
                           <span> — {formatPrice(ticketPrice.total, currency)}</span>
                         )}
-                      </div>
+                      </li>
                     )
                   })}
                 </ul>
@@ -194,6 +195,7 @@ const EventItem = ({
           <a
             href={url}
             css={buttonBaseStyle}
+            aria-label="go to DICE event page"
             rel="noopener noreferrer nofollow"
             target="_blank"
             tw="w-40 text-font-sm font-bold uppercase text-center bg-accent-color py-2.5 hover:bg-darken-accent-color"

@@ -47,6 +47,7 @@ const EventList = ({
             <button
               tw="flex w-full justify-center text-text-color uppercase rounded-3xl py-3 bg-bg-color border-light-container-color border border-solid cursor-pointer ease-in duration-100 hover:bg-gray-900 hover:border-gray-900"
               type="button"
+              aria-label="load more events"
               onClick={handleLoadMore}
             >
               Load More
