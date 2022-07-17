@@ -65,6 +65,8 @@ const App = () => {
   })
 
   const handleSearch = (venue: string) => {
+    if (venue === searchVenue) return
+
     setSearchVenue(venue)
 
     if (venue) {
