@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import { EventItem } from '../components'
-import eventData from './fixtures/event'
+import eventData from './fixtures/eventData'
 
 const { name: eventName } = eventData
 const playBtnId = 'playButton'

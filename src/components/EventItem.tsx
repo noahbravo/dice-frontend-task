@@ -157,13 +157,13 @@ const EventItem = ({
       <div>
         <button
           css={buttonBaseStyle}
-          tw="flex justify-between w-full bg-dark-container-color px-4 py-2.5 hover:bg-darken-container-color"
+          tw="flex justify-between items-center w-full h-10 bg-dark-container-color px-4 hover:bg-darken-container-color"
           type="button"
           aria-label="toggle event content"
           onClick={onToggle}
         >
           <strong>More info</strong>
-          <strong>+</strong>
+          <strong tw="text-font-lg leading-none">{activeToggle ? '-' : '+'}</strong>
         </button>
         <StyledToggleContent ref={toggleContentRef}>
           <div tw="p-4">
