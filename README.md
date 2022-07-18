@@ -1,46 +1,135 @@
-# Getting Started with Create React App
+# Dice Frontend Engineer Technical Exercise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React app for displaying DICE events at a particular venue. The app has an input that takes a venue name and then shows the events.
 
-## Available Scripts
+![App Preview](https://i.imgur.com/ymCMBBP.png)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Requirements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] The list should be initially limited to 12 events, and if more available have a “Load More” button.
+- [x] The UI should be responsive and look nice on common screen sizes (desktop/tablet/mobile).
+- [x] The play button on the image should only be visible if apple_music_tracks or spotify_tracks are populated with audio clip.
+- [x] The “On sale” badge on image and “Get reminded” button should show on events where the on sale date is after now.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Twin.macro](https://github.com/ben-rogerson/twin.macro) with:
+  - [Emotion](https://emotion.sh/docs/introduction)
+  - [TailwindCSS](https://tailwindcss.com/)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/) with:
+  - [Airbnb config](https://github.com/airbnb/javascript)
+  - [TypeScript](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+  - [Jest-dom](https://github.com/testing-library/eslint-plugin-jest-dom)
+  - [Prettier](https://github.com/prettier/eslint-config-prettier)
+  - And a few other ES2015+ related rules
+- [Jest](https://jestjs.io) with [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/)
+- [Craco](https://github.com/dilanx/craco)
+- [axe-core](https://www.npmjs.com/package/@craco/craco)
+- [GitHub Action workflows](https://github.com/features/actions) set up to run tests, linting and formatting on push
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+# install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# run in dev mode on port 3000
+npm run start
 
-### `npm run eject`
+# generate production build
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Testing
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Jest with React Testing Library
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm run test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Linting
 
-## Learn More
+```
+# run linter
+npm run lint
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# fix lint issues
+npm run lint:fix
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+
+## Formatting
+
+```
+# run prettier
+npm run format
+```
+
+---
+
+## Structure
+
+```
+./src/
+  # Unit and integration tests
+  ├── __tests__/
+  │   ├── fixtures/
+  │   ├── App.test.tsx
+  │   ├── EventList.test.tsx
+  │   └── EventItem.test.tsx
+  │
+    # TypeScript types
+  ├──  @Types
+  │     ├── events.ts
+  │     ├── fonts.d.ts
+  │     ├──  twin.d.ts
+  │       …
+  │
+    # Services that take care of the communication between the app and the API
+  ├──  api
+  │     ├── services
+  │         └── events.ts
+  │
+  # React components
+  ├── components/
+  │   ├── EventList.tsx
+  │   ├── EventItem.tsx
+  │       …
+  │   ├── ui/
+  │       ├── Layout.tsx
+  │       ├── Header.tsx
+  │       …
+  │
+  # Custom hooks
+  ├── hooks/
+  │   ├── useDebounce.ts
+  │   └── useGetEvents.ts
+  │
+  # Global styles, fonts and helpers
+  ├──  styles
+  │     ├── fonts.ts
+  │     ├── helpers.ts
+  │     └── global.ts
+  │
+  # Helper and formatter functions
+  └──  utils
+       ├── formatters.ts
+       └── helpers.ts
+.public/
+ ├── favicon/
+ ├── fonts/
+ ├── index.html
+ └── robots.txt
+```

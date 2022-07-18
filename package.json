@@ -9,7 +9,7 @@
     "test": "craco test --testMatch=\"**/*.(test).{ts,tsx}\"",
     "coverage": "craco test --coverage",
     "eject": "react-scripts eject",
-    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,ts,tsx,json}\"",
+    "lint": "eslint --ignore-path .gitignore \"src/**/*.{js,ts,tsx}\"",
     "lint:fix": "npm run lint --fix",
     "format": "prettier --config .prettierrc --ignore-path .gitignore \"src/**/*.{js,ts,tsx,json}\" --write"
   },
