@@ -61,7 +61,7 @@ const App = () => {
     setSearchVenue(formattedVenue)
 
     if (formattedVenue) {
-      getEvents({ variables: { limit: REQUEST_LITMIT, venue, nextPage } })
+      getEvents({ variables: { limit: REQUEST_LITMIT, venue, nextPage: null } })
     }
 
     if (eventNodes.length) resetEvents()
