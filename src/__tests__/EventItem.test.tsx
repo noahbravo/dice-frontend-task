@@ -13,7 +13,7 @@ test('displays event', () => {
   expect(screen.getAllByText(eventName)[0]).toBeInTheDocument()
 })
 
-test('play button is visible if apple_music_tracks or spotify_tracks is populated with audio clip', () => {
+test('play button is visible if apple_music_tracks or spotify_tracks are populated with audio clip', () => {
   render(<EventItem {...eventData} />)
 
   const playButtonIcon = screen.queryByTestId(playBtnId)

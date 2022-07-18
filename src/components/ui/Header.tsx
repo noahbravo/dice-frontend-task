@@ -3,7 +3,7 @@ import 'twin.macro'
 import { DiceLogo } from './svg'
 
 const Header = () => (
-  <header tw="flex justify-center w-full h-24 fixed bg-bg-color z-10">
+  <header tw="fixed flex justify-center w-full h-24 bg-bg-color z-10">
     <DiceLogo />
   </header>
 )

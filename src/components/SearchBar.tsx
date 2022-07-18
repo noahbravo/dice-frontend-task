@@ -26,13 +26,13 @@ const SearchBar = ({ handleSearch }: SearchBarProps) => {
   }, [debouncedValue, handleSearch])
 
   return (
-    <div tw="flex justify-center w-full px-5 pt-1 bg-bg-color fixed left-0 z-10">
+    <div tw="fixed flex justify-center w-full px-5 pt-1 bg-bg-color left-0 z-10">
       <form tw="w-full relative pb-10 bg-bg-color max-w-screen-2xl">
         <div tw="absolute top-2.5 left-4">
           <SearchIcon />
         </div>
         <input
-          tw="w-full rounded-3xl py-3 pr-2 pl-12 text-font-base border-0"
+          tw="w-full py-3 pr-2 pl-12 rounded-3xl border-0 text-font-base"
           type="text"
           value={value}
           onChange={onSearch}

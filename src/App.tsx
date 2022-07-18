@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import 'twin.macro'
-import { Layout, SearchBar, EventList, Loader } from './components'
-import { RequestParams, RequestParamKeys } from './api'
+import { Layout, SearchBar, EventList, Loader, HelperText } from './components'
+import { RequestParamKeys } from './api'
 import type { ApiData, Event as EventType, PageLinks } from './@types/events'
 import { useGetEvents } from './hooks'
 
@@ -10,7 +10,7 @@ const App = () => {
   const [searchVenue, setSearchVenue] = useState('')
   const [eventNodes, setEventNodes] = useState<EventType[]>([])
   const [hasNextPage, setHasNextPage] = useState(true)
-  const [nextPage, setNextPage] = useState<RequestParams[RequestParamKeys.Page]>(null)
+  const [nextPage, setNextPage] = useState<string | null>(null)
 
   const resetNextPage = () => {
     setNextPage(null)
@@ -21,16 +21,6 @@ const App = () => {
     setEventNodes([])
     resetNextPage()
   }
-
-  const getRequestVariables = (
-    venue: RequestParams[RequestParamKeys.Venues],
-    next: RequestParams[RequestParamKeys.Page]
-  ) =>
-    ({
-      [RequestParamKeys.Limit]: REQUEST_LITMIT,
-      [RequestParamKeys.Venues]: venue,
-      [RequestParamKeys.Page]: next
-    } as RequestParams)
 
   const updateEventNodes = (fetchedEvents: EventType[]) => {
     if (fetchedEvents.length) {
@@ -65,41 +55,46 @@ const App = () => {
   })
 
   const handleSearch = (venue: string) => {
-    if (venue === searchVenue) return
+    const formattedVenue = venue.trim()
+    if (!searchVenue.localeCompare(formattedVenue, undefined, { sensitivity: 'base' })) return
 
-    setSearchVenue(venue)
+    setSearchVenue(formattedVenue)
 
-    if (venue) {
-      const requestVariables = getRequestVariables(venue, nextPage)
-      getEvents({ variables: requestVariables })
-      return
+    if (formattedVenue) {
+      getEvents({ variables: { limit: REQUEST_LITMIT, venue, nextPage } })
     }
 
     if (eventNodes.length) resetEvents()
   }
 
   const handleLoadMore = () => {
-    const requestVariables = getRequestVariables(searchVenue, nextPage)
-    getEvents({ variables: requestVariables })
+    getEvents({ variables: { limit: REQUEST_LITMIT, venue: searchVenue, nextPage } })
   }
+
+  const hasEventNodes = eventNodes.length > 0
+  const showVenueHasNoEventsText = !hasEventNodes && !loading && searchVenue
 
   return (
     <Layout>
       <SearchBar handleSearch={handleSearch} />
       <div tw="w-full">
-        <div tw="m-auto max-w-screen-2xl pt-24">
+        <div tw="max-w-screen-2xl m-auto pt-24">
           {error && (
-            <span tw="font-bold text-font-xl text-red-600" data-testid="error">
+            <span tw="text-font-xl font-bold text-red-600" data-testid="error">
               {error}
             </span>
           )}
-          <EventList
-            eventNodes={eventNodes}
-            hasNextPage={hasNextPage}
-            searchVenue={searchVenue}
-            loading={loading}
-            handleLoadMore={handleLoadMore}
-          />
+          {showVenueHasNoEventsText && (
+            <HelperText text={`Hm, couldn't find anything for "${searchVenue}"`} />
+          )}
+          {hasEventNodes && (
+            <EventList
+              eventNodes={eventNodes}
+              showHelperText={!loading && Boolean(searchVenue)}
+              showLoadMore={!loading && hasNextPage}
+              handleLoadMore={handleLoadMore}
+            />
+          )}
           {loading && <Loader />}
         </div>
       </div>

@@ -1,4 +1,4 @@
-const fetch = window.fetch ? window.fetch : require('cross-fetch')
+const fetch = process.env.NODE_ENV === 'test' ? require('cross-fetch') : window.fetch
 
 const { REACT_APP_X_API_KEY, REACT_APP_API_URL } = process.env
 

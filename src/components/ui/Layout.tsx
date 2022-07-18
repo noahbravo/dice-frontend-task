@@ -15,7 +15,7 @@ const StyledMainContainer = styled.div`
 const Layout: React.FC<LayoutProps> = ({ children }) => (
   <div>
     <Header />
-    <main tw="flex justify-center w-full py-24 relative z-0">
+    <main tw="relative z-0 flex justify-center w-full py-24">
       <StyledMainContainer>{children}</StyledMainContainer>
     </main>
     <Global styles={globalStyles} />

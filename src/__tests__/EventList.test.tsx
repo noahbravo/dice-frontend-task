@@ -5,58 +5,14 @@ import eventData from './fixtures/eventData'
 
 const loadMoreBtnOptions = { name: /Load more/i }
 
-const getTextOptions = (searchVenue: string) => ({
-  validVenue: `Upcoming events at ${searchVenue}`,
-  invalidVenue: `Hm, couldn't find anything for "${searchVenue}"`
-})
-
 const defatultProps = {
   eventNodes: [],
-  hasNextPage: true,
-  loading: false,
-  searchVenue: '',
+  showLoadMore: true,
+  showHelperText: true,
   handleLoadMore: jest.fn()
 }
 
-test('does not display text, events or load more button when venue is empty string', () => {
-  render(<EventList {...defatultProps} />)
-
-  // does not show any of the text options
-  const textOptions = getTextOptions('')
-  Object.values(textOptions).forEach((text) => {
-    expect(screen.queryByText(text)).not.toBeInTheDocument()
-  })
-
-  // does not show events
-  const eventItems = screen.queryAllByTestId('eventItem')
-  expect(eventItems).toEqual([])
-
-  // does not show load more button
-  expect(screen.queryByRole('button', loadMoreBtnOptions)).not.toBeInTheDocument()
-})
-
-test('displays text but no events or load more button when venue has no events', () => {
-  const searchVenue = 'Venue with no events'
-  const eventListProps = {
-    ...defatultProps,
-    searchVenue
-  }
-
-  render(<EventList {...eventListProps} />)
-
-  // shows valid text
-  const textOptions = getTextOptions(searchVenue)
-  expect(screen.getByText(textOptions.invalidVenue)).toBeInTheDocument()
-
-  // does not show events
-  const eventItems = screen.queryAllByTestId('eventItem')
-  expect(eventItems).toEqual([])
-
-  // does not show load more button
-  expect(screen.queryByRole('button', loadMoreBtnOptions)).not.toBeInTheDocument()
-})
-
-test('displays text, events and load more button when venue has events', () => {
+test('displays text, events and load more button', () => {
   const searchVenue = eventData.venue
   const eventListProps = {
     ...defatultProps,
@@ -67,8 +23,7 @@ test('displays text, events and load more button when venue has events', () => {
   render(<EventList {...eventListProps} />)
 
   // shows valid text
-  const textOptions = getTextOptions(searchVenue)
-  expect(screen.getByText(textOptions.validVenue)).toBeInTheDocument()
+  expect(screen.getByText(`Upcoming events at ${searchVenue}`)).toBeInTheDocument()
 
   // shows events
   const eventItems = screen.queryAllByTestId('eventItem')

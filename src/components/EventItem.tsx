@@ -8,9 +8,8 @@ import type { Event as EventType } from '../@types/events'
 
 const StyledToggleContent = styled.div`
   ${tw`max-h-0 bg-dark-container-color overflow-x-hidden overflow-y-auto`};
-  box-sizing: border-box;
-  max-height: ${toRem(475)};
   height: 0;
+  max-height: ${toRem(475)};
   transition: all 0.25s 0.15s ease-in-out;
   &::-webkit-scrollbar {
     width: 0.875rem;
@@ -43,8 +42,8 @@ const StyledImageWrapper = styled.div`
   }
 `
 
-const buttonBaseStyle = css`
-  ${tw`text-text-color border-0 cursor-pointer ease-in duration-100`}
+const buttonBaseStyles = css`
+  ${tw`border-0 text-text-color cursor-pointer ease-in duration-100`}
 `
 
 const EventItem = ({
@@ -132,12 +131,12 @@ const EventItem = ({
                 </div>
               )}
               {onSale ? (
-                <strong tw="flex bg-bg-color py-2 px-4 mr-4">
+                <strong tw="flex mr-4 py-2 px-4 bg-bg-color">
                   On sale {saleDay} {saleMonth} {saleTime}
                 </strong>
               ) : (
                 featured && (
-                  <strong tw="flex uppercase bg-accent-color py-2 px-4 mr-4">Featured</strong>
+                  <strong tw="flex mr-4 py-2 px-4 bg-accent-color uppercase">Featured</strong>
                 )
               )}
             </div>
@@ -148,7 +147,7 @@ const EventItem = ({
         <span>
           {weekDayName} {day} {month} — {time}
         </span>
-        <strong tw="flex text-font-xl mt-2 mb-4">{name}</strong>
+        <strong tw="flex mt-2 mb-4 text-font-xl">{name}</strong>
         <strong tw="flex mb-1">{venue}</strong>
         <span>
           {location.city}, {location.country}
@@ -156,8 +155,8 @@ const EventItem = ({
       </div>
       <div>
         <button
-          css={buttonBaseStyle}
-          tw="flex justify-between items-center w-full h-10 bg-dark-container-color px-4 hover:bg-darken-container-color"
+          css={buttonBaseStyles}
+          tw="flex justify-between items-center w-full h-10 px-4 bg-dark-container-color hover:bg-darken-container-color"
           type="button"
           aria-label="toggle event content"
           onClick={onToggle}
@@ -169,7 +168,7 @@ const EventItem = ({
           <div tw="p-4">
             <p tw="leading-6">{description}</p>
             <div tw="mt-6 mb-8">
-              <strong tw="flex text-accent-color uppercase text-font-sm mb-3">Line Up</strong>
+              <strong tw="flex mb-3 text-font-sm text-accent-color uppercase">Line Up</strong>
               <ul>
                 {lineup.map(({ details: lineupDetails, time: lineupTime }, index) => (
                   <li key={`${id}_${lineupDetails}_${lineupTime || index}`} tw="mt-2">
@@ -180,7 +179,7 @@ const EventItem = ({
               </ul>
             </div>
             <div>
-              <strong tw="flex text-accent-color uppercase text-font-sm mb-3">Tickets</strong>
+              <strong tw="flex mb-3 text-font-sm text-accent-color uppercase">Tickets</strong>
               {ticketTypes?.length && (
                 <ul>
                   {ticketTypes.map(
@@ -198,7 +197,7 @@ const EventItem = ({
                             <>
                               <span> — {formatPrice(ticketPrice.total, currency)}</span>
                               {soldOutTicket && (
-                                <span tw="text-font-sm font-bold uppercase opacity-50 ml-2">
+                                <span tw="ml-2 text-font-sm font-bold uppercase opacity-50">
                                   Sold out
                                 </span>
                               )}
@@ -217,8 +216,8 @@ const EventItem = ({
       <div tw="flex justify-between items-center py-6">
         {(unavailable || soldOut) && (
           <span
-            css={buttonBaseStyle}
-            tw="w-40 text-black text-font-sm font-bold uppercase bg-light-container-color text-center py-2.5 pointer-events-none cursor-default"
+            css={buttonBaseStyles}
+            tw="flex justify-center items-center w-40 h-10 bg-light-container-color text-font-sm font-bold text-black leading-none uppercase pointer-events-none cursor-default"
           >
             {soldOut ? statusText.soldOut : statusText.unavailable}
           </span>
@@ -226,11 +225,11 @@ const EventItem = ({
         {available && (
           <a
             href={url}
-            css={buttonBaseStyle}
+            css={buttonBaseStyles}
             aria-label="go to DICE event page"
             rel="noopener noreferrer nofollow"
             target="_blank"
-            tw="flex w-40 h-10 justify-center items-center text-font-sm font-bold uppercase bg-accent-color hover:bg-darken-accent-color leading-none"
+            tw="flex justify-center items-center w-40 h-10 bg-accent-color text-font-sm font-bold leading-none uppercase hover:bg-darken-accent-color"
           >
             {onSale ? statusText.onSale : statusText.bookNow}
           </a>
