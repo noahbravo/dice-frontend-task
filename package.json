@@ -1,7 +1,7 @@
 {
   "name": "dice-frontend-task",
   "version": "0.1.0",
-  "description": "Frontend Engineer Technical Exercise",
+  "description": "DICE Frontend Engineer Technical Exercise",
   "private": true,
   "scripts": {
     "start": "craco start",

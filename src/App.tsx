@@ -9,12 +9,11 @@ const App = () => {
   const REQUEST_LITMIT = '12'
   const [searchVenue, setSearchVenue] = useState('')
   const [eventNodes, setEventNodes] = useState<EventType[]>([])
-  const [hasNextPage, setHasNextPage] = useState(true)
   const [nextPage, setNextPage] = useState<string | null>(null)
+  const hasNextPage = Boolean(nextPage)
 
   const resetNextPage = () => {
     setNextPage(null)
-    setHasNextPage(false)
   }
 
   const resetEvents = () => {
@@ -30,7 +29,6 @@ const App = () => {
 
   const updateNextPage = (next: PageLinks['next']) => {
     if (next) {
-      setHasNextPage(true)
       const urlParams = new URLSearchParams(next)
       setNextPage(urlParams.get(RequestParamKeys.Page))
     } else {

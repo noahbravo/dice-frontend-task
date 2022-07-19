@@ -3,7 +3,7 @@ name: test
 on: push
 
 jobs:
-  unit:
+  unit-integration:
     runs-on: ubuntu-latest
 
     steps:

@@ -22,7 +22,7 @@ test('displays text, events and load more button', () => {
 
   render(<EventList {...eventListProps} />)
 
-  // shows valid text
+  // shows text
   expect(screen.getByText(`Upcoming events at ${searchVenue}`)).toBeInTheDocument()
 
   // shows events

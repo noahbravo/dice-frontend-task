@@ -97,7 +97,7 @@ const EventItem = ({
   const lowestTicketPrice = Math.min(...ticketTypes.map(({ price }) => price.total))
   const { month, weekDayName, day, time } = formatDate(date, timezone)
 
-  const withAudioTracks = Boolean(appleMusicTracks.length || spotifyTracks.length)
+  const hasAudioTracks = Boolean(appleMusicTracks.length || spotifyTracks.length)
 
   const onSale = status === 'on-sale' && getDateStatus(saleStartDate) === DateStatus.AfterNow
   const unavailable = status === 'cancelled' || getDateStatus(dateEnd) === DateStatus.BeforeNow
@@ -120,9 +120,9 @@ const EventItem = ({
     <div tw="mt-8 mb-10" data-testid="eventItem">
       <StyledImageWrapper ref={imageWrapperRef}>
         <BackgroundImage css={imageContainerStyles} src={images[0]} width="320px" height="320px">
-          {(featured || withAudioTracks || onSale) && (
+          {(featured || hasAudioTracks || onSale) && (
             <div tw="flex justify-between items-center">
-              {withAudioTracks && (
+              {hasAudioTracks && (
                 <div
                   tw="flex justify-center items-center w-12 h-12 bg-black bg-opacity-50"
                   data-testid="playButton"

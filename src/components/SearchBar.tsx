@@ -1,7 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react'
-import 'twin.macro'
+import tw, { styled, theme } from 'twin.macro'
 import { useDebounce } from '../hooks'
 import { SearchIcon } from './ui/svg'
+
+const StyledInput = styled.input`
+  ${tw`w-full py-3 pr-2 pl-12 rounded-3xl border-0 text-font-base`};
+  outline-color: ${theme<string>('colors.accent-color')};
+  &:focus {
+    outline-style: solid;
+  }
+`
 
 interface SearchBarProps {
   handleSearch: (venue: string) => void
@@ -31,13 +39,7 @@ const SearchBar = ({ handleSearch }: SearchBarProps) => {
         <div tw="absolute top-2.5 left-4">
           <SearchIcon />
         </div>
-        <input
-          tw="w-full py-3 pr-2 pl-12 rounded-3xl border-0 text-font-base"
-          type="text"
-          value={value}
-          onChange={onSearch}
-          placeholder="Find an event"
-        />
+        <StyledInput type="text" value={value} onChange={onSearch} placeholder="Find an event" />
       </form>
     </div>
   )
