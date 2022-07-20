@@ -17,7 +17,7 @@ interface SearchBarProps {
 
 const SearchBar = ({ handleSearch }: SearchBarProps) => {
   const [value, setValue] = useState('')
-  const debouncedValue = useDebounce<string>(value)
+  const debouncedValue = useDebounce<string>(value, 200)
   const debounceRef = useRef(false)
 
   const onSearch = (event: React.ChangeEvent<HTMLInputElement>) => {

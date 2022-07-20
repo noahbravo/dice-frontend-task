@@ -117,7 +117,7 @@ npm run format
   # Custom hooks
   ├── hooks/
   │   ├── useDebounce.ts
-  │   └── useGetEvents.ts
+  │   └── useLazyFetch.ts
   │
   # Global styles, fonts and helpers
   ├──  styles

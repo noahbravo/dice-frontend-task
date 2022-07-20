@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import 'twin.macro'
 import { Layout, SearchBar, EventList, Loader, HelperText } from './components'
-import { RequestParamKeys } from './api'
+import { RequestParamKeys, type RequestParams, fetchEvents } from './api'
 import type { ApiData, Event as EventType, PageLinks } from './@types/events'
-import { useGetEvents } from './hooks'
+import { useLazyFetch } from './hooks'
 
 const App = () => {
   const REQUEST_LITMIT = '12'
@@ -36,20 +36,27 @@ const App = () => {
     }
   }
 
-  const handleOnCompletedRequest = (data: ApiData | undefined) => {
-    if (data?.data.length) {
-      const { data: fetchedEvents, links } = data
-      const { next } = links || {}
-      updateEventNodes(fetchedEvents)
-      updateNextPage(next)
-      return
+  const { lazyFetch, loading, error } = useLazyFetch<ApiData, RequestParams>(fetchEvents, {
+    onCompleted: (data: ApiData | undefined) => {
+      if (data?.data.length) {
+        const { data: fetchedEvents, links } = data
+        const { next } = links || {}
+        updateEventNodes(fetchedEvents)
+        updateNextPage(next)
+        return
+      }
+
+      if (eventNodes.length) resetEvents()
     }
+  })
 
-    if (eventNodes.length) resetEvents()
-  }
-
-  const { getEvents, loading, error } = useGetEvents<ApiData>({
-    onCompleted: handleOnCompletedRequest
+  const getRequestParams = (
+    venue: RequestParams[RequestParamKeys.Venues],
+    next: RequestParams[RequestParamKeys.Page]
+  ): RequestParams => ({
+    [RequestParamKeys.Limit]: REQUEST_LITMIT,
+    [RequestParamKeys.Venues]: venue,
+    [RequestParamKeys.Page]: next
   })
 
   const handleSearch = (venue: string) => {
@@ -59,14 +66,16 @@ const App = () => {
     setSearchVenue(formattedVenue)
 
     if (formattedVenue) {
-      getEvents({ variables: { limit: REQUEST_LITMIT, venue, nextPage: null } })
+      const variables = getRequestParams(formattedVenue, null)
+      lazyFetch({ variables })
     }
 
     if (eventNodes.length) resetEvents()
   }
 
   const handleLoadMore = () => {
-    getEvents({ variables: { limit: REQUEST_LITMIT, venue: searchVenue, nextPage } })
+    const variables = getRequestParams(searchVenue, nextPage)
+    lazyFetch({ variables })
   }
 
   const hasEventNodes = eventNodes.length > 0

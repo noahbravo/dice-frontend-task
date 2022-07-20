@@ -1,2 +1,2 @@
-export * from './useGetEvents'
+export * from './useLazyFetch'
 export * from './useDebounce'
