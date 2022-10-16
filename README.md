@@ -10,9 +10,7 @@ This is a React app for displaying music events at a particular venue. The app h
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Twin.macro](https://github.com/ben-rogerson/twin.macro) with:
-  - [Emotion](https://emotion.sh/docs/introduction)
-  - [TailwindCSS](https://tailwindcss.com/)
+- [Chakra-ui](https://chakra-ui.com/)
 - [Prettier](https://prettier.io/)
 - [ESLint](https://eslint.org/) with:
   - [Airbnb config](https://github.com/airbnb/javascript)
@@ -22,7 +20,6 @@ This is a React app for displaying music events at a particular venue. The app h
   - And a few other ES2015+ related rules
 - [Jest](https://jestjs.io) with [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/)
-- [Craco](https://github.com/dilanx/craco)
 - [axe-core](https://www.npmjs.com/package/@craco/craco)
 - [GitHub Action workflows](https://github.com/features/actions) set up to run tests and linting on push
 
@@ -77,30 +74,82 @@ npm run format
   # Unit and integration tests
   ├── __tests__/
   │   ├── fixtures/
-  │       └── apiData.json
-  │   ├── App.test.tsx
-  │   ├── SearchBox.test.tsx
-  │   └── EventItem.test.tsx
-  │   └── EventItem.test.tsx
+  │       └── event.json
+  │   ├── integration/
+  │       └── App.test.tsx
+  │   └── unit/
+  │       ├── Event.test.tsx
+  │       └── SearchBar.test.tsx
   │
-    # Services that take care of the communication between the app and the API
-  ├──  api
-  │     ├── services
+  # Services that take care of the communication between the app and the API
+  ├──  api/
+  │     └── services
   │         └── events.ts
   │
-  # React components
-  ├── components/
-  │   ├── EventList.tsx
-  │   ├── EventItem/
+  # Images and other media
+  ├──  assets/
+  │     └── img
+  │         ├── dice-logo.svg
+  │         ├── event-thumb.jpg
+  │         ├── play-icon.svg
+  │         └── search-icon.svg
+  │
+  # Handles logic, wraps screens and pass down props
+  ├── containers/
+  │   ├── index.tsx
+  │   └── Search.tsx
+  │
+  # Returns new state based on the current one
+  ├── reducers/
+  │   ├── events.ts
+  │   ├── fetch.ts
+  │   └── index.ts
+  │
+  # Style base, tokens and config
+  ├── theme/
+  │   ├── components/
+  │       ├── dataDisplay
+  │           ├── badge.ts
+  │           └── index.ts
+  │       ├── form
+  │           ├── button.ts
+  │           ├── index.ts
+  │           └── input.ts
+  │       ├── layout
+  │           ├── container.ts
+  │           └── index.ts
+  │             …
+  │   ├── Fonts.ts
+  │   ├── index.ts
+  │   ├── styles.ts
+  │     …
+  │
+  # TypeScript types
+  ├──  types/
+  │     ├── events.d.ts
+  │     ├── fonts.d.ts
+  │     ├──  images.d.ts
+  │       …
+  │
+  # Primitives (chakra-ui), components and screens
+  ├── ui/
+  │   ├── components/
+  │       ├── Events
+  │           ├── Card/
+  │               ├── Description.tsx
+  │               ├── Footer.tsx
+  │               ├── Header.tsx
+  │                 …
+  │       ├── Layout
+  │           ├── Header.tsx
+  │           └── index.tsx
+  │       ├── Loader
+  │           ├── index.tsx
+  │           └── styles.ts
+  │             …
+  │   └── screens/
   │       ├── index.tsx
-  │       ├── EventHeader.tsx
-  │       ├── EventDescription.tsx
-  │       └── EventFooter.tsx
-  │       …
-  │   ├── ui/
-  │       ├── Layout.tsx
-  │       ├── Header.tsx
-  │       …
+  │       └── Search.tsx
   │
   # Custom hooks
   ├── hooks/
@@ -108,23 +157,18 @@ npm run format
   │   ├── useLazyFetch.ts
   │   └── useComponentDidMount.ts
   │
-  # Global styles, fonts and helpers
-  ├──  styles
-  │     ├── fonts.ts
-  │     ├── helpers.ts
-  │     └── global.ts
-  │
-      # TypeScript types
-  ├──  types
-  │     ├── events.d.ts
-  │     ├── fonts.d.ts
-  │     ├──  twin.d.ts
-  │       …
-  │
-  # Helper and formatter functions
-  └──  utils
-       ├── formatters.ts
-       └── helpers.ts
+  # Helper and formatter functions and custom hooks
+  └──  utils/
+  │    ├── hooks/
+  │        ├── useFetch/
+  │            ├── index.ts
+  │            └── types.ts
+  │        ├── index.ts
+  │        └── useGetEvents.ts
+  │           …
+  │    ├── formatters.ts
+  │    ├── helpers.ts
+  │    └── index.ts
 
 .public/
  ├── favicon/
@@ -143,12 +187,10 @@ Go to [docs](https://dicefm.stoplight.io/docs/event-details-spec/aa8b542c6515b-g
 
 ## To do
 
-- Migrate to a more stable version of [Craco](https://github.com/dilanx/craco). Current version is 7.0.0-alpha.7. Had to use this version due to the following [error](https://github.com/dilanx/craco/issues/425). Hope that a new version will also give support to Aliased imports as [create-react-app doesn't support them at the moment](https://github.com/facebook/create-react-app/issues/12047).
-- Replace [react-image-and-background-image-fade](https://github.com/nckblu/react-image-and-background-image-fade) with a custom hook to handle image loading. Although `react-image-and-background-image-fade` provides a nice animation to transition between loading and loaded states, the module has some issues such as absence of types, [buggy ️lazy loading](https://reactjs.org/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage) and some minor performance loss. The module was used due to time constraints and the fact that this feature was not a requirement for the task.
+- Give support to Aliased imports as [create-react-app doesn't support them at the moment](https://github.com/facebook/create-react-app/issues/12047).
 - Add e2e tests with [Cypress](https://www.cypress.io/) or [Playwright](https://playwright.dev/).
 - Document components with [Storybook](https://storybook.js.org/).
 - Add missing `h1` for SEO.
-- Improve Api error handling.
 
 ---
 

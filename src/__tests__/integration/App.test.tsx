@@ -3,15 +3,15 @@ import { rest } from 'msw'
 import { setupServer } from 'msw/node'
 import { render, fireEvent, waitFor, screen } from '@testing-library/react'
 import App from '../../App'
-import apiData from '../fixtures/apiData.json'
+import event from '../fixtures/event.json'
 
 const { REACT_APP_API_URL } = process.env
 
-const { venue, name: eventName } = apiData.data[0]
+const { venue, name: eventName } = event.data[0]
 
 const server = setupServer(
   rest.get(REACT_APP_API_URL, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json(apiData))
+    return res(ctx.status(200), ctx.json(event))
   })
 )
 

@@ -1,4 +1,5 @@
 export * from './useGetEvents'
 export * from './useFetch'
+export * from './useProgressiveImage'
 export * from './useSearch'
 export * from './useToggle'
