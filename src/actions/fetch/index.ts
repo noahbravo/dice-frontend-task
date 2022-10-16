@@ -1,4 +1,4 @@
-import { LoadingAction, FetchedAction, ErrorAction } from './types'
+import type { LoadingAction, FetchedAction, ErrorAction } from './types'
 
 export function loadingAction(): LoadingAction {
   return {
