@@ -21,6 +21,8 @@ export const Badge = {
       textTransform: 'none'
     },
     play: {
+      display: 'flex',
+      justifyContent: 'center',
       width: 12,
       height: 12,
       backgroundColor: 'rgba(0,0,0,0.5)'

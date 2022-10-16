@@ -1,7 +1,10 @@
 import React from 'react'
-import { Box, Flex, Badge } from '@chakra-ui/react'
+import { Box, Flex, Badge, Image as Icon } from '@chakra-ui/react'
 import type { Event as EventType } from '../../../../types/events'
 import { formatDate } from '../../../../utils'
+import { useProgressiveImage } from '../../../../utils/hooks'
+import eventThumb from '../../../../assets/img/event-thumb.jpg'
+import playIcon from '../../../../assets/img/play-icon.svg'
 
 interface ImageProps {
   timezone: EventType['timezone']
@@ -19,6 +22,7 @@ const Image = React.forwardRef<HTMLDivElement, ImageProps>(
     forwardRef
   ) => {
     const hasAudioTracks = Boolean(appleMusicTracks.length || spotifyTracks.length)
+    const { src, blur } = useProgressiveImage(eventThumb, images[0])
 
     const {
       month: saleMonth,
@@ -30,7 +34,8 @@ const Image = React.forwardRef<HTMLDivElement, ImageProps>(
       <Box
         w="100%"
         h={320}
-        bgImage={`url('${images[0]}')`}
+        bgImage={`url('${src}')`}
+        filter={blur ? 'blur(8px)' : 'none'}
         bgPosition="center"
         bgRepeat="no-repeat"
         bgSize="cover"
@@ -42,7 +47,7 @@ const Image = React.forwardRef<HTMLDivElement, ImageProps>(
             <Flex justify="space-between" align="center">
               {hasAudioTracks && (
                 <Badge variant="play" data-testid="playButton">
-                  PlayIcon
+                  <Icon src={playIcon} alt="Play icon" w="4" />
                 </Badge>
               )}
               {onSale ? (
