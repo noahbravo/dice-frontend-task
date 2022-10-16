@@ -2,8 +2,8 @@ import React from 'react'
 import { rest } from 'msw'
 import { setupServer } from 'msw/node'
 import { render, fireEvent, waitFor, screen } from '@testing-library/react'
-import App from '../App'
-import apiData from './fixtures/apiData.json'
+import App from '../../App'
+import apiData from '../fixtures/apiData.json'
 
 const { REACT_APP_API_URL } = process.env
 
@@ -35,19 +35,16 @@ test('loads and displays events', async () => {
   expect(elementsWithEventName).toHaveLength(2)
 })
 
-// test('handles server error', async () => {
-//   server.use(
-//     rest.get(REACT_APP_API_URL, (req, res, ctx) => {
-//       return res(ctx.status(500))
-//     })
-//   )
+test('handles server error', async () => {
+  server.use(
+    rest.get(REACT_APP_API_URL, (req, res, ctx) => {
+      return res(ctx.status(500))
+    })
+  )
 
-//   render(<App />)
+  render(<App />)
 
-//   const searchInput = screen.getByPlaceholderText(/Find an event/i)
-
-//   fireEvent.change(searchInput, { target: { value: venue } })
-
-//   const error = await waitFor(() => screen.findByTestId('error'))
-//   expect(error).toHaveTextContent('Oops, failed to fetch data!')
-// })
+  const searchInput = screen.getByPlaceholderText(/Find an event/i)
+  fireEvent.change(searchInput, { target: { value: venue } })
+  expect(await screen.findByText('Internal Server Error')).toBeInTheDocument()
+})

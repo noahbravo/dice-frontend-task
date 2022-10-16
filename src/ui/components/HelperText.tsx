@@ -9,19 +9,20 @@ enum TextOptions {
 interface HelperTextProps {
   children: string
   withEvents: boolean | undefined
+  error: string | undefined
 }
 
 const getText = (venue: string, withEvents: boolean) => {
   return withEvents ? `${TextOptions.result} ${venue}` : `${TextOptions.noResult} "${venue}"`
 }
 
-const HelperText = ({ children: venue, withEvents = false }: HelperTextProps) => {
+const HelperText = ({ children: venue, withEvents = false, error }: HelperTextProps) => {
   const textContent = getText(venue, withEvents)
 
   return (
     <Flex w="full" justifyContent={{ sm: 'center', md: 'flex-start' }}>
       <Text fontSize="4xl" as="strong">
-        {textContent}
+        {error || textContent}
       </Text>
     </Flex>
   )

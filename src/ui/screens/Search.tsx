@@ -9,10 +9,11 @@ interface SearchProps {
   onLoadMore: () => void
   loading: boolean
   events: EventsType | null
+  error: string | undefined
   venue: string
 }
 
-const Search = ({ search, onSearch, onLoadMore, loading, events, venue }: SearchProps) => {
+const Search = ({ search, onSearch, onLoadMore, loading, events, error, venue }: SearchProps) => {
   const { data, links } = events || {}
   const withEvents = data && data?.length > 0
   const hasNextPage = links?.next
@@ -24,7 +25,11 @@ const Search = ({ search, onSearch, onLoadMore, loading, events, venue }: Search
         {loading && <Loader />}
         {venue && (
           <>
-            {!loading && <HelperText withEvents={withEvents}>{venue}</HelperText>}
+            {!loading && (
+              <HelperText withEvents={withEvents} error={error}>
+                {venue}
+              </HelperText>
+            )}
             {withEvents && <Events data={data} />}
             {hasNextPage && <LoadMore onLoadMore={onLoadMore} />}
           </>
