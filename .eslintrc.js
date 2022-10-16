@@ -38,6 +38,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
     'import/prefer-default-export': 'off',
     'no-param-reassign': 'off',
     'import/extensions': [
@@ -64,13 +65,5 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     'prettier/prettier': 'warn'
-  },
-  overrides: [
-    {
-      files: ['craco.config.js'],
-      rules: {
-        'global-require': 'off'
-      }
-    }
-  ]
+  }
 }
