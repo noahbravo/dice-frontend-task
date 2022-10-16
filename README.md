@@ -1,17 +1,8 @@
-# DICE Frontend Engineer Technical Exercise
+# React TypeScript Music Event List
 
-This is a React app for displaying DICE events at a particular venue. The app has an input that takes a venue name and then shows the events.
+This is a React app for displaying music events at a particular venue. The app has an input that takes a venue name and then shows the events.
 
 ![App Preview](https://i.imgur.com/ymCMBBP.png)
-
----
-
-## Requirements
-
-- [x] The list should be initially limited to 12 events, and if more available have a “Load More” button.
-- [x] The UI should be responsive and look nice on common screen sizes (desktop/tablet/mobile).
-- [x] The play button on the image should only be visible if apple_music_tracks or spotify_tracks are populated with audio clip.
-- [x] The “On sale” badge on image and “Get reminded” button should show on events where the on sale date is after now.
 
 ---
 
@@ -86,18 +77,11 @@ npm run format
   # Unit and integration tests
   ├── __tests__/
   │   ├── fixtures/
-  │       ├── apiData.json
-  │       └── eventData.ts
+  │       └── apiData.json
   │   ├── App.test.tsx
-  │   ├── EventList.test.tsx
+  │   ├── SearchBox.test.tsx
   │   └── EventItem.test.tsx
-  │
-    # TypeScript types
-  ├──  @types
-  │     ├── events.ts
-  │     ├── fonts.d.ts
-  │     ├──  twin.d.ts
-  │       …
+  │   └── EventItem.test.tsx
   │
     # Services that take care of the communication between the app and the API
   ├──  api
@@ -107,7 +91,11 @@ npm run format
   # React components
   ├── components/
   │   ├── EventList.tsx
-  │   ├── EventItem.tsx
+  │   ├── EventItem/
+  │       ├── index.tsx
+  │       ├── EventHeader.tsx
+  │       ├── EventDescription.tsx
+  │       └── EventFooter.tsx
   │       …
   │   ├── ui/
   │       ├── Layout.tsx
@@ -116,8 +104,9 @@ npm run format
   │
   # Custom hooks
   ├── hooks/
-  │   ├── useDebounce.ts
-  │   └── useLazyFetch.ts
+  │   ├── useFetch.ts
+  │   ├── useLazyFetch.ts
+  │   └── useComponentDidMount.ts
   │
   # Global styles, fonts and helpers
   ├──  styles
@@ -125,10 +114,18 @@ npm run format
   │     ├── helpers.ts
   │     └── global.ts
   │
+      # TypeScript types
+  ├──  types
+  │     ├── events.d.ts
+  │     ├── fonts.d.ts
+  │     ├──  twin.d.ts
+  │       …
+  │
   # Helper and formatter functions
   └──  utils
        ├── formatters.ts
        └── helpers.ts
+
 .public/
  ├── favicon/
  ├── fonts/
@@ -149,9 +146,7 @@ Go to [docs](https://dicefm.stoplight.io/docs/event-details-spec/aa8b542c6515b-g
 - Migrate to a more stable version of [Craco](https://github.com/dilanx/craco). Current version is 7.0.0-alpha.7. Had to use this version due to the following [error](https://github.com/dilanx/craco/issues/425). Hope that a new version will also give support to Aliased imports as [create-react-app doesn't support them at the moment](https://github.com/facebook/create-react-app/issues/12047).
 - Replace [react-image-and-background-image-fade](https://github.com/nckblu/react-image-and-background-image-fade) with a custom hook to handle image loading. Although `react-image-and-background-image-fade` provides a nice animation to transition between loading and loaded states, the module has some issues such as absence of types, [buggy ️lazy loading](https://reactjs.org/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage) and some minor performance loss. The module was used due to time constraints and the fact that this feature was not a requirement for the task.
 - Add e2e tests with [Cypress](https://www.cypress.io/) or [Playwright](https://playwright.dev/).
-- Create smaller and reusable components such as `Button` and `ToggleContent`.
 - Document components with [Storybook](https://storybook.js.org/).
-- Transform `HelperText` into a [polymorfic component](https://blog.logrocket.com/build-strongly-typed-polymorphic-components-react-typescript/).
 - Add missing `h1` for SEO.
 - Improve Api error handling.
 

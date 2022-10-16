@@ -1,4 +1,4 @@
-const formatPrice = (price: number, currency: string) => {
+function formatPrice(price: number, currency: string) {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency,
@@ -8,7 +8,7 @@ const formatPrice = (price: number, currency: string) => {
   return formatter.format(price / 100)
 }
 
-const formatDate = (isoString: Date, timeZone: string) => {
+function formatDate(isoString: string, timeZone: string) {
   const date = new Date(isoString)
   const weekDayName = date.toLocaleString('default', { timeZone, weekday: 'short' })
   const day = date.getDate()

@@ -1,0 +1,22 @@
+import React from 'react'
+import { render, screen, fireEvent, waitFor } from '@testing-library/react'
+import { getUrlParam } from '../utils'
+import { SearchBar } from '../components'
+
+const handleSearch = jest.fn((value) => value)
+const searchValue = 'test'
+
+test('should call handleSearch on search input change', async () => {
+  render(<SearchBar handleSearch={handleSearch} />)
+  const searchInput = screen.getByPlaceholderText(/Find an event/i)
+  fireEvent.change(searchInput, { target: { value: searchValue } })
+  await waitFor(() => expect(handleSearch).lastCalledWith(expect.stringMatching(searchValue)))
+})
+
+test('should update query params on search', async () => {
+  render(<SearchBar handleSearch={handleSearch} />)
+  const searchInput = screen.getByPlaceholderText(/Find an event/i)
+  fireEvent.change(searchInput, { target: { value: searchValue } })
+  const venue = getUrlParam('venue')
+  expect(venue).toEqual(searchValue)
+})
