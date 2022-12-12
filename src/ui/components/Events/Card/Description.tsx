@@ -32,7 +32,6 @@ const EventDescription = React.forwardRef<HTMLDivElement, DescriptionProps>(
           </Flex>
         </Button>
         <Box
-          className="toggle maxContentHeight={475}"
           backgroundColor="whiteAlpha.300"
           maxHeight={0}
           overflow="hidden"
